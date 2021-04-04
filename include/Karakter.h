@@ -14,7 +14,7 @@ class Karakter
     int vedekezes;
     public:
         Karakter();
-        Karakter(std::string,int,int,int,int,int,int);
+        Karakter(std::string Nev,int Eletero,int Tapasztalat,int Arany,int MinSebzes,int MaxSebzes,int Vedekezes);
         virtual ~Karakter();
 
         std::string getNev() const {return nev;}

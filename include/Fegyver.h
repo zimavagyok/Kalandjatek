@@ -6,19 +6,16 @@
 
 class Fegyver : public Targy
 {
-    double kritikusSebzesEsely;
-    double kritikusSebzesSzorzo;
+    double kritikusSebzes;
 
     public:
         Fegyver();
-        Fegyver(std::string,int,int,int,int,double,double,bool);
+        Fegyver(std::string Nev,int VeteliAr,int EladasiAr,int TamadasPlusz,double KritikusSebzes);
         virtual ~Fegyver();
 
-        double getKritikusSebzesEsely() {return kritikusSebzesEsely;}
-        void setKritikusSebzesEsely(double KritikusSebzesEsely) {kritikusSebzesEsely = KritikusSebzesEsely;}
-        double getKritikusSebzesSzorzo() {return kritikusSebzesSzorzo;}
-        void setKritikusSebzesSzorzo(double KritikusSebzesSzorzo)  {kritikusSebzesSzorzo = KritikusSebzesSzorzo;}
-        Targy& clone() const;
+        double getKritikusSebzes() {return kritikusSebzes;}
+        void setKritikusSebzes(double KritikusSebzes) {kritikusSebzes = KritikusSebzes;}
+        Fegyver& clone() const;
 };
 
 std::ostream& operator<<(std::ostream&, const Fegyver&);

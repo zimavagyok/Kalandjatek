@@ -2,6 +2,8 @@
 #define JATEKOS_H
 
 #include "Karakter.h"
+#include "Ital.h"
+#include "Fegyver.h"
 #include <vector>
 
 class Jatekos : public Karakter
@@ -15,12 +17,12 @@ class Jatekos : public Karakter
 
     int statPontok;
 
-    std::vector<Targy*> targyak;
-    Targy *elsodlegesFegyver;
+    std::vector<Ital*> italok;
+    Fegyver *elsodlegesFegyver;
 
     public:
         Jatekos();
-        void initJatekos(const std::string); //done
+        void initJatekos(const std::string Nev) //done
         virtual ~Jatekos();
 
         int getMaxEletero() const {return maxEletero;}
@@ -36,19 +38,18 @@ class Jatekos : public Karakter
         int getStatPontok() const {return statPontok;}
         void setStatPontok() {statPontok = StatPontok;}
         int getTargyakSzama() const {return targyak.size();}
-        void tamadas(Karakter&, Karakter&);
+        void tamadas(Karakter& kit);
 
-        void stathozAdas(int stat, int value); //done
+        void Jatekos::stathozAdas(int stat, int value); //done
         void statFrissites(); //done
         void szintLepes(); //done
-        bool tartalmazTargy(const Targy&) const; //done
-        void addTargy(const Targy&); //done
-        void removeTargy(int); //done
-        const Targy& getTargy(const int index) const; //done
-        const Targy& getElsodlegesFegyver() const; //done
-        void targyakKilistazasa(); //done
+        void addItal(const Ital& ujItal); //done
+        void removeItal(int index); //done
+        const Ital& getItal(const int index) const; //done
+        const Fegyver& getElsodlegesFegyver() const; //done
+        void italokKilistazasa(); //done
 
-        void setElsodlegesFegyver(const Targy& ujTargy) {elsodlegesFegyver = ujTargy.clone();}
+        void setElsodlegesFegyver(const Fegyver& ujFegyver);
 };
 
 std::ostream& operator<<(std::ostream&, const Jatekos&);

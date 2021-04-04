@@ -9,7 +9,7 @@ class Ital : public Targy
 
     public:
         Ital();
-        Ital(std::string,int,int,int,int,int);
+        Ital(std::string Nev,int VeteliAr,int EladasiAr,int TamadasPlusz,int EleteroPlusz);
         virtual ~Ital();
 
         int getEleteroPlusz() {return eleteroPlusz;}
@@ -17,6 +17,6 @@ class Ital : public Targy
         Targy& clone() const;
 };
 
-std::ostream& operator<<(std::ostream&, const Ital&);
+std::ostream& operator<<(std::ostream& out, const Ital& ital);
 
 #endif // ITAL_H

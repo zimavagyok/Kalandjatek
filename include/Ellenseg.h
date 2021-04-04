@@ -9,14 +9,14 @@ class Ellenseg : public Karakter
     double maxTamadasSzorzo;
     public:
         Ellenseg();
-        Ellenseg(std::string,int,int,int,int,int,int,double);
+        Ellenseg(std::string Nev,int Eletero,int Tapasztalat,int Arany,int MinSebzes,int MaxSebzes,int Vedekezes,double VedekezesSzorzo,double MaxTamadasSzorzo);
         virtual ~Ellenseg();
 
         double getMaxTamadasSzorzo() const {return maxTamadasSzorzo;}
         void setMaxTamadasSzorzo(double maxTamadasSzorzo) {maxTamadasSzorzo = MaxTamadasSzorzo;}
-        void tamadas(Karakter&, Karakter&);
+        void tamadas(Karakter& kit);
 };
 
-std::ostream& operator<<(std::ostream&,const Ellenseg&);
+std::ostream& operator<<(std::ostream& out,const Ellenseg& ellenseg);
 
 #endif // ELLENSEG_H

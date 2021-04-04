@@ -12,7 +12,7 @@ class Targy
 
     public:
         Targy();
-        Targy(std::string,int,int,int,int);
+        Targy(std::string Nev, int VeteliAr, int EladasiAr, int TamadasPlusz);
         virtual ~Targy();
 
         std::string getNev() const {return nev;}
@@ -23,7 +23,6 @@ class Targy
         void setEladasiAr(int EladasiAr) {eladasiAr = EladasiAr;}
         int getTamadasPlusz() const {return tamadasPlusz;}
         void setTamadasPlusz(int TamadasPlusz) {tamadasPlusz = TamadasPlusz;}
-        virtual Targy* clone() const = 0;
 };
 
 std::ostream& operator<<(std::ostream&,const Targy&);

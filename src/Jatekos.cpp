@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include <stdlib.h>
 
 Jatekos::Jatekos() : Karakter("",0,0,0,0,0,0),szint(0),kovetkezoSzint(0),maxEletero(0),ero(0),eleteroSzint(0),statPontok(0),elsodlegesFegyver(NULL)
 {
@@ -68,53 +69,36 @@ void Jatekos::szintLepes()
     }
 }
 
-bool Jatekos::tartalmazTargy(const Targy& ujTargy) const
+void Jatekos::addItal(const Ital& ujItal)
 {
-    for(size_t i = 0;i<targyak.size();i++)
-    {
-        if(strcmp(targyak[i].getNev(),ujTargy.getNev()))
-            return true;
-    }
-    return false;
-}
-
-void Jatekos::addTargy(const Targy& ujTargy)
-{
-    if(!tartalmazTargy(ujTargy))
-    {
-        targyak.push_back(ujTargy.clone());
-        std::cout<<"A targy sikeresen hozzaadva a targyaidhoz!\n";
-    }
-    else
-    {
-        std::cout<<"Mar van nalad ilyen targy!\n";
-    }
+    italok.push_back(ujItal.clone());
+    std::cout<<"Sikeres hozzaadas!\n";
 }
 
 void Jatekos::removeTargy(int index)
 {
-    if(index<0 || index>targyak.size()-1)
+    if(index<0 || index>italok.size()-1)
         std::cout<<"Nem lehet torolni a megadott elemet!\n";
     else
     {
-        delete targyak[i];
-        targyak.erase(targyak.begin() + index);
-        std::cout<<"Targy sikeresen eltavolitva a targyaid kozul!\n";
+        delete italok[i];
+        italok.erase(italok.begin() + index);
+        std::cout<<"Ital sikeresen eltavolitva az italjaid kozul!\n";
     }
 }
 
-const Targy& getTargy(const int index) const
+const Ital& Jatekos::getItal(const int index) const
 {
-    if(index>targyak.size()-1 || index < 0)
+    if(index>ital.size()-1 || index < 0)
     {
-        std::cout<<"Nincs nalad ennyi targy!\n";
+        std::cout<<"Nincs nalad ennyi ital!\n";
         return NULL;
     }
     else
-        return targyak[i];
+        return italok[i];
 }
 
-const Targy& Jatekos::getElsodlegesFegyver() const
+const Fegyver& Jatekos::getElsodlegesFegyver() const
 {
     if(elsodlegesFegyver!=NULL)
         return elsodlegesFegyver;
@@ -125,18 +109,18 @@ const Targy& Jatekos::getElsodlegesFegyver() const
     }
 }
 
-void Jatekos::targyakKilistazasa()
+void Jatekos::italokKilistazasa()
 {
-    if(targyak.size()>0)
+    if(italok.size()>0)
     {
-        for(size_t i = 0;i<targyak.size();i++)
+        for(size_t i = 0;i<italok.size();i++)
         {
-            std::cout << targyak[i];
+            std::cout << italok[i];
         }
     }
     else
     {
-        std::cout<<"Nincs nalad egy targy sem...\n";
+        std::cout<<"Nincs nalad egy ital sem...\n";
     }
 }
 
@@ -146,6 +130,11 @@ void Jatekos::tamadas(Karakter& kit)
     if(getElsodlegesFegyver!=NULL)
     {
         mennyi += getElsodlegesFegyver().getTamadasPlusz();
+        int esely = rand() % 10 + 1;
+        if(esely > 7)
+        {
+            mennyi += getElsodlegesFegyver().getKri
+        }
     }
     mennyi += getSebzes()-(0.5*kit.getVedekezes());
     kit.takeSebzes(mennyi);
@@ -162,6 +151,15 @@ std::ostream& operator<<(std::ostream& out, const Jatekos& jatekos)
         << "\nFelhasznalhato statisztika pontjaid: " << jatekos.getStatPontok()
         << "\nFegyvered: " << jatekos.getElsodlegesFegyver() == NULL ? "Nincs" : jatekos.getElsodlegesFegyver()
         << "\nNalad levo targyak: \n" << jatekos.targyakKilistazasa() << std::endl;
+}
+
+void Jatekos::setElsodlegesFegyver(const Fegyver& ujFegyver)
+{
+    if(elsodlegesFegyver==NULL)
+    {
+        delete elsodlegesFegyver;
+    }
+    elsodlegesFegyver = ujTargy.clone();
 }
 
 Jatekos::~Jatekos()
