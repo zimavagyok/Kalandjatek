@@ -184,7 +184,7 @@ Jatekos::~Jatekos()
     {
         for(size_t i = italok.size();i>0;i--)
         {
-            delete italok[i];
+            delete italok[i-1];
             italok.pop_back();
         }
     }

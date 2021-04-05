@@ -4,6 +4,7 @@
 #include "Jatekos.h"
 #include "Targy.h"
 #include "Jatek.h"
+#include "memtrace.h"
 
 class Jatek
 {

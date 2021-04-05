@@ -21,15 +21,17 @@
 1617626211 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\kiegeszito.cpp
 	"Kiegeszito.h"
 
-1617634265 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\main.cpp
+1617652096 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\main.cpp
 	<iostream>
 	<time.h>
 	"Jatek.h"
+	"gtest_lite.h"
 
-1617623028 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatek.h
+1617652873 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatek.h
 	"Jatekos.h"
 	"Targy.h"
 	"Jatek.h"
+	"memtrace.h"
 
 1617639511 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatekos.h
 	"Karakter.h"
@@ -52,7 +54,7 @@
 	"Jatekos.h"
 	<iostream>
 
-1617645879 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
+1617652528 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
 	"Jatek.h"
 	"Esemeny.h"
 	"Kiegeszito.h"
@@ -74,7 +76,7 @@
 	"Jatekos.h"
 	<iostream>
 
-1617645856 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatekos.cpp
+1617646191 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatekos.cpp
 	"Jatekos.h"
 	"Ellenseg.h"
 	<iostream>
@@ -85,4 +87,59 @@
 1617645222 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\esemeny.cpp
 	"Esemeny.h"
 	"Kiegeszito.h"
+
+1613468962 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<algorithm>
+
+1613468962 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+	"memtrace.h"
+
+1616619778 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<list>
+	<map>
+	<algorithm>
+	<functional>
+	<memory>
+	<iomanip>
+	<locale>
+	<typeinfo>
+	<ostream>
+	<stdexcept>
+	<ctime>
+	<iterator>
+	<regex>
+
+1616619778 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<cstdlib>
+	<string>
+	<fstream>
+	<iterator>
+	<regex>
+	"memtrace.h"
 

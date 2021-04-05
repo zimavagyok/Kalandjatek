@@ -1,6 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include "Jatek.h"
+#include "gtest_lite.h"
 
 using namespace std;
 

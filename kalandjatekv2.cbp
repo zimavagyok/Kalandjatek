@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-DMEMTRACE" />
 					<Add directory="include" />
 				</Compiler>
 			</Target>
@@ -41,6 +42,7 @@
 		<Unit filename="include/Jatek.h" />
 		<Unit filename="include/Jatekos.h" />
 		<Unit filename="include/Karakter.h" />
+		<Unit filename="include/Kiegeszito.h" />
 		<Unit filename="include/Targy.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Ellenseg.cpp" />
@@ -50,6 +52,7 @@
 		<Unit filename="src/Jatek.cpp" />
 		<Unit filename="src/Jatekos.cpp" />
 		<Unit filename="src/Karakter.cpp" />
+		<Unit filename="src/Kiegeszito.cpp" />
 		<Unit filename="src/Targy.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

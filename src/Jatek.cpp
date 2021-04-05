@@ -65,16 +65,16 @@ void Jatek::initJatek()
 void Jatek::foMenu()
 {
     std::cout<<"Udvozollek a jatekban! Valassz a kovetkezo menupontok kozul!\n";
-    std::cout <<"0. Kilepes\n1. Jatek inditasa\n";
+    std::cout <<"1. Kilepes\n2. Jatek inditasa\n";
     std::cout<<"Valasztasod: ";
     std::cin >> valasztas;
-    while(std::cin.fail() || valasztas<0 || valasztas > 1)
+    while(valasztas<1 || valasztas > 2)
     {
         std::cout<<"Hibas valasztas!\n";
         std::cout<<"Valasztasod: ";
         std::cin >> valasztas;
     }
-    if(valasztas==0)
+    if(valasztas==1)
     {
         jatekFut = false;
         std::cout<<"A viszont latasra!\n";
