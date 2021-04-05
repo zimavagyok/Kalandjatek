@@ -22,7 +22,7 @@ class Jatekos : public Karakter
 
     public:
         Jatekos();
-        void initJatekos(const std::string Nev) //done
+        void initJatekos(const std::string Nev); //done
         virtual ~Jatekos();
 
         int getMaxEletero() const {return maxEletero;}
@@ -35,19 +35,20 @@ class Jatekos : public Karakter
         void setEro(int Ero) {ero = Ero;}
         int getEleteroSzint() const {return eleteroSzint;}
         void setEleteroSzint(int EleteroSzint) {eleteroSzint = EleteroSzint;}
-        void maxElet() {eletero = maxEletero;}
+        void maxElet() {setEletero(maxEletero);}
         int getStatPontok() const {return statPontok;}
-        void setStatPontok() {statPontok = StatPontok;}
-        int getTargyakSzama() const {return targyak.size();}
+        void setStatPontok(int StatPontok) {statPontok = StatPontok;}
         void tamadas(Karakter& kit);
 
-        void Jatekos::stathozAdas(int stat, int value); //done
+        void stathozAdas(int stat, int value); //done
         void statFrissites(); //done
         void szintLepes(); //done
         void addItal(const Ital& ujItal); //done
-        void removeItal(int index); //done
-        const Ital& getItal(const int index) const; //done
-        const Fegyver& getElsodlegesFegyver() const; //done
+        void removeItal(const int index); //done
+        Ital* getItal(const int index) const; //done
+        void eladItal(const int index);
+        int italokSzama() {return italok.size();}
+        Fegyver* getElsodlegesFegyver() const; //done
         void italokKilistazasa(); //done
 
         void setElsodlegesFegyver(const Fegyver& ujFegyver);

@@ -1,9 +1,14 @@
 #include <iostream>
+#include <time.h>
+#include "Jatek.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    srand(time(NULL));
+    Jatek ujJatek;
+    ujJatek.foMenu();
+
     return 0;
 }

@@ -4,5 +4,6 @@
 #include <iostream>
 
 void elvalasztas();
+std::string randomNev(int hossz);
 
 #endif // KIEGESZITO

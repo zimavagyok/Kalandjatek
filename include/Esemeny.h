@@ -14,7 +14,7 @@ class Esemeny
 
         void generalEsemeny(Jatekos&,std::vector<Targy*>);
         void boltTalalkozas(Jatekos&,std::vector<Targy*>);
-        void ellenfelTalalkozas(Jatekos&, std::vector<Ellenseg*>);
+        void ellenfelTalalkozas(Jatekos&);
 };
 
 #endif // ESEMENY_H

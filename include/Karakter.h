@@ -22,7 +22,7 @@ class Karakter
         int getEletero() const {return eletero;}
         void setEletero(int Eletero) {eletero = Eletero;}
         int getTapasztalat() const {return tapasztalat;}
-        void setTapasztalat(int Tapasztalat) {return tapasztalat = Tapasztalat;}
+        void setTapasztalat(int Tapasztalat) {tapasztalat = Tapasztalat;}
         int getArany() const {return arany;}
         void setArany(int Arany) {arany = Arany;}
         void levonArany(int Arany) {arany -= Arany;}
@@ -34,7 +34,9 @@ class Karakter
         void setVedekezes(int Vedekezes) {vedekezes = Vedekezes;}
         int getSebzes() const {return rand() % maxSebzes + minSebzes;}
         void addEletero(int mennyit) {eletero += mennyit;}
-        virtual void tamadas(Karakter&, Karakter&) = 0;
+        void addArany(int mennyit) {arany+=mennyit;}
+        void addTp(int mennyit) {tapasztalat+=mennyit;}
+        virtual void tamadas(Karakter&) = 0;
 
         void takeSebzes(int Sebzes);
         bool eletben() {return eletero > 0;}

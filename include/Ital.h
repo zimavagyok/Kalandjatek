@@ -2,6 +2,7 @@
 #define ITAL_H
 
 #include "Targy.h"
+class Jatekos;
 
 class Ital : public Targy
 {
@@ -14,8 +15,9 @@ class Ital : public Targy
 
         int getEleteroPlusz() {return eleteroPlusz;}
         void setEleteroPlusz(int EleteroPlusz) {eleteroPlusz = EleteroPlusz;}
-        Targy& clone() const;
+        Ital* clone() const;
         void hasznal(Jatekos& jatekos);
+        void vasarol(Jatekos&);
 };
 
 std::ostream& operator<<(std::ostream& out, const Ital& ital);

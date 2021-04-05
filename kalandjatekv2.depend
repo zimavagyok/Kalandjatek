@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1617560355 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\karakter.cpp
+	"Karakter.h"
+	<iostream>
+
+1617638023 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\karakter.h
+	<string>
+
+1617634672 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\ellenseg.cpp
+	"Ellenseg.h"
+	"Kiegeszito.h"
+	<iostream>
+
+1617635911 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\ellenseg.h
+	"Karakter.h"
+	<string>
+
+1617626099 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\kiegeszito.h
+	<iostream>
+
+1617626211 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\kiegeszito.cpp
+	"Kiegeszito.h"
+
+1617634265 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\main.cpp
+	<iostream>
+	<time.h>
+	"Jatek.h"
+
+1617623028 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatek.h
+	"Jatekos.h"
+	"Targy.h"
+	"Jatek.h"
+
+1617639511 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatekos.h
+	"Karakter.h"
+	"Ital.h"
+	"Fegyver.h"
+	<vector>
+
+1617639594 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\ital.h
+	"Targy.h"
+
+1617639579 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\targy.h
+	<string>
+
+1617639676 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\fegyver.h
+	"Targy.h"
+	<string>
+
+1617639765 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\ital.cpp
+	"Ital.h"
+	"Jatekos.h"
+	<iostream>
+
+1617638668 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
+	"Jatek.h"
+	"Esemeny.h"
+	"Kiegeszito.h"
+	<iostream>
+	<fstream>
+
+1617638066 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\esemeny.h
+	"Jatekos.h"
+	"Ellenseg.h"
+	"Targy.h"
+	<vector>
+
+1617639093 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\targy.cpp
+	"Targy.h"
+	<iostream>
+
+1617639766 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\fegyver.cpp
+	"Fegyver.h"
+	"Jatekos.h"
+	<iostream>
+
+1617639531 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatekos.cpp
+	"Jatekos.h"
+	"Ellenseg.h"
+	<iostream>
+	<string>
+	<string.h>
+	<stdlib.h>
+
+1617639773 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\esemeny.cpp
+	"Esemeny.h"
+	"Kiegeszito.h"
+
