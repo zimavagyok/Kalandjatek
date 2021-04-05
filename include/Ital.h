@@ -15,6 +15,7 @@ class Ital : public Targy
         int getEleteroPlusz() {return eleteroPlusz;}
         void setEleteroPlusz(int EleteroPlusz) {eleteroPlusz = EleteroPlusz;}
         Targy& clone() const;
+        void hasznal(Jatekos& jatekos);
 };
 
 std::ostream& operator<<(std::ostream& out, const Ital& ital);

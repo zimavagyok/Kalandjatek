@@ -25,6 +25,7 @@ class Karakter
         void setTapasztalat(int Tapasztalat) {return tapasztalat = Tapasztalat;}
         int getArany() const {return arany;}
         void setArany(int Arany) {arany = Arany;}
+        void levonArany(int Arany) {arany -= Arany;}
         int getMinSebzes() const {return minSebzes;}
         void setMinSebzes(int MinSebzes) {minSebzes = MinSebzes;}
         int getMaxSebzes() const {return maxSebzes;}

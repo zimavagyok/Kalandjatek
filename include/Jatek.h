@@ -1,12 +1,15 @@
 #ifndef JATEK_H
 #define JATEK_H
 
+#include "Jatekos.h"
+#include "Targy.h"
+#include "Jatek.h"
 
 class Jatek
 {
     int valasztas;
     bool jatekFut;
-    Karakter jatekos;
+    Jatekos* jatekos;
     std::vector<Targy*> betoltottTargyak;
 
     public:
@@ -16,6 +19,7 @@ class Jatek
         void initJatek();
         void foMenu();
         void jatekMenu();
+        void karakterMenu();
         void ujJatekosKeszitese();
         void karakterSzintlepes();
         void utazas();

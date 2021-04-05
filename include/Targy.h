@@ -1,6 +1,7 @@
 #ifndef TARGY_H
 #define TARGY_H
 
+#include "Jatekos.h"
 #include <string>
 
 class Targy
@@ -23,6 +24,7 @@ class Targy
         void setEladasiAr(int EladasiAr) {eladasiAr = EladasiAr;}
         int getTamadasPlusz() const {return tamadasPlusz;}
         void setTamadasPlusz(int TamadasPlusz) {tamadasPlusz = TamadasPlusz;}
+        virtual void hasznal(Jatekos& jatekos)=0;
 };
 
 std::ostream& operator<<(std::ostream&,const Targy&);

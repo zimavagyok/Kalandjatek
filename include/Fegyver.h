@@ -16,8 +16,9 @@ class Fegyver : public Targy
         double getKritikusSebzes() {return kritikusSebzes;}
         void setKritikusSebzes(double KritikusSebzes) {kritikusSebzes = KritikusSebzes;}
         Fegyver& clone() const;
+        void hasznal(Jatekos& jatekos);
 };
 
-std::ostream& operator<<(std::ostream&, const Fegyver&);
+std::ostream& operator<<(std::ostream& out, const Fegyver& fegyver);
 
 #endif // FEGYVER_H

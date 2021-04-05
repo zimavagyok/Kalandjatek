@@ -35,6 +35,7 @@ class Jatekos : public Karakter
         void setEro(int Ero) {ero = Ero;}
         int getEleteroSzint() const {return eleteroSzint;}
         void setEleteroSzint(int EleteroSzint) {eleteroSzint = EleteroSzint;}
+        void maxElet() {eletero = maxEletero;}
         int getStatPontok() const {return statPontok;}
         void setStatPontok() {statPontok = StatPontok;}
         int getTargyakSzama() const {return targyak.size();}
