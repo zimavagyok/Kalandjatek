@@ -28,6 +28,6 @@ class Targy
         virtual void vasarol(Jatekos&)=0;
 };
 
-std::ostream& operator<<(std::ostream&,Targy&);
+std::ostream& operator<<(std::ostream&,const Targy&);
 
 #endif // TARGY_H

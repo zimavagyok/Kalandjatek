@@ -30,7 +30,7 @@ void Ellenseg::tamadas(Karakter& kit)
 
 std::ostream& operator<<(std::ostream& out,const Ellenseg& ellenseg)
 {
-    out << (Karakter&)ellenseg
+    return out << (Karakter&)ellenseg
         << "Az ellenseged tamadas szorzoja: " << ellenseg.getMaxTamadasSzorzo() << std::endl;
 }
 

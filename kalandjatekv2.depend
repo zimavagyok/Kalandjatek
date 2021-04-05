@@ -1,17 +1,17 @@
 # depslib dependency file v1.0
-1617560355 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\karakter.cpp
+1617641121 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\karakter.cpp
 	"Karakter.h"
 	<iostream>
 
 1617638023 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\karakter.h
 	<string>
 
-1617634672 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\ellenseg.cpp
+1617643366 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\ellenseg.cpp
 	"Ellenseg.h"
 	"Kiegeszito.h"
 	<iostream>
 
-1617635911 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\ellenseg.h
+1617642989 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\ellenseg.h
 	"Karakter.h"
 	<string>
 
@@ -37,22 +37,22 @@
 	"Fegyver.h"
 	<vector>
 
-1617639594 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\ital.h
+1617644749 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\ital.h
 	"Targy.h"
 
-1617639579 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\targy.h
+1617645063 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\targy.h
 	<string>
 
-1617639676 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\fegyver.h
+1617645900 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\fegyver.h
 	"Targy.h"
 	<string>
 
-1617639765 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\ital.cpp
+1617644613 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\ital.cpp
 	"Ital.h"
 	"Jatekos.h"
 	<iostream>
 
-1617638668 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
+1617645879 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
 	"Jatek.h"
 	"Esemeny.h"
 	"Kiegeszito.h"
@@ -65,16 +65,16 @@
 	"Targy.h"
 	<vector>
 
-1617639093 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\targy.cpp
+1617645068 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\targy.cpp
 	"Targy.h"
 	<iostream>
 
-1617639766 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\fegyver.cpp
+1617644770 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\fegyver.cpp
 	"Fegyver.h"
 	"Jatekos.h"
 	<iostream>
 
-1617639531 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatekos.cpp
+1617645856 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatekos.cpp
 	"Jatekos.h"
 	"Ellenseg.h"
 	<iostream>
@@ -82,7 +82,7 @@
 	<string.h>
 	<stdlib.h>
 
-1617639773 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\esemeny.cpp
+1617645222 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\esemeny.cpp
 	"Esemeny.h"
 	"Kiegeszito.h"
 

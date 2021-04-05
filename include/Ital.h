@@ -13,7 +13,7 @@ class Ital : public Targy
         Ital(std::string Nev,int VeteliAr,int EladasiAr,int TamadasPlusz,int EleteroPlusz);
         virtual ~Ital();
 
-        int getEleteroPlusz() {return eleteroPlusz;}
+        int getEleteroPlusz() const {return eleteroPlusz;}
         void setEleteroPlusz(int EleteroPlusz) {eleteroPlusz = EleteroPlusz;}
         Ital* clone() const;
         void hasznal(Jatekos& jatekos);

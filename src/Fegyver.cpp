@@ -20,10 +20,10 @@ void Fegyver::hasznal(Jatekos& jatekos)
     std::cout<<"A fegyvered mar hasznalatban van!\n";
 }
 
-std::ostream& operator<<(std::ostream& out, Fegyver& fegyver)
+std::ostream& operator<<(std::ostream& out,const Fegyver& fegyver)
 {
     return out << (Targy&)fegyver
-        << "\tKritikus sebzes: " << fegyver.getKritikusSebzes() << std::endl;
+               << "\tKritikus sebzes: " << fegyver.getKritikusSebzes() << std::endl;
 }
 
 void Fegyver::vasarol(Jatekos& jatekos)

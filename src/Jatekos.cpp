@@ -104,7 +104,6 @@ Fegyver* Jatekos::getElsodlegesFegyver() const
         return elsodlegesFegyver;
     else
     {
-        std::cout<<"Nincs fegyvered!\n";
         return NULL;
     }
 }
@@ -115,7 +114,7 @@ void Jatekos::italokKilistazasa()
     {
         for(size_t i = 0;i<italok.size();i++)
         {
-            std::cout << italok[i];
+            std::cout << i<<". "<<(*italok[i]);
         }
     }
     else
@@ -141,7 +140,7 @@ void Jatekos::tamadas(Karakter& kit)
     std::cout<<"Az altalad kioszott sebzes: "<<mennyi<<std::endl;
 }
 
-std::ostream& operator<<(std::ostream& out, Jatekos& jatekos)
+std::ostream& operator<<(std::ostream& out,const Jatekos& jatekos)
 {
         out << (Karakter&)jatekos
         << "Szint: " << jatekos.getSzint()
@@ -155,7 +154,7 @@ std::ostream& operator<<(std::ostream& out, Jatekos& jatekos)
         }
         else
         {
-            out <<"\nFegyver: " << jatekos.getElsodlegesFegyver()<<std::endl;
+            out<<"\nFegyver: " << (*jatekos.getElsodlegesFegyver())<<std::endl;
         }
         return out;
 }
@@ -171,7 +170,7 @@ void Jatekos::setElsodlegesFegyver(const Fegyver& ujFegyver)
 
 void Jatekos::eladItal(const int index)
 {
-    addArany(italok[index]->getVeteliAr());
+    addArany(italok[index]->getEladasiAr());
     removeItal(index);
 }
 

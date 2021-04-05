@@ -18,6 +18,6 @@ class Ellenseg : public Karakter
         void tamadas(Karakter& kit);
 };
 
-std::ostream& operator<<(std::ostream& out,Ellenseg& ellenseg);
+std::ostream& operator<<(std::ostream& out,const Ellenseg& ellenseg);
 
 #endif // ELLENSEG_H

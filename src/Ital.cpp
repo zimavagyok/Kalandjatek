@@ -14,10 +14,10 @@ Ital* Ital::clone() const
     return new Ital(*this);
 }
 
-std::ostream& operator<<(std::ostream& out, Ital& ital)
+std::ostream& operator<<(std::ostream& out,const Ital& ital)
 {
     return out << (Targy&)ital
-        << "\tPlusz eletero: " << ital.getEleteroPlusz() << std::endl;
+               << "\tPlusz eletero: " << ital.getEleteroPlusz() << std::endl;
 }
 
 void Ital::hasznal(Jatekos& jatekos)

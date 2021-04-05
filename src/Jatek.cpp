@@ -65,7 +65,7 @@ void Jatek::initJatek()
 void Jatek::foMenu()
 {
     std::cout<<"Udvozollek a jatekban! Valassz a kovetkezo menupontok kozul!\n";
-    std::cout <<"0. Kilepes\n1.Jatek inditasa\n";
+    std::cout <<"0. Kilepes\n1. Jatek inditasa\n";
     std::cout<<"Valasztasod: ";
     std::cin >> valasztas;
     while(std::cin.fail() || valasztas<0 || valasztas > 1)
@@ -114,13 +114,13 @@ void Jatek::ujJatekosKeszitese()
 
 void Jatek::jatekMenu()
 {
-    while(jatekFut || jatekos->eletben())
+    while(jatekFut && jatekos->eletben())
     {
         elvalasztas();
         std::cout<<"Udvozollek "<<jatekos->getNev()<<"! Valassz az alabbi lehetosegek kozul!\n";
         if(jatekos->getTapasztalat() >= jatekos->getKovetkezoSzint())
         {
-            std::cout<<"==SZINT LEPES LEHETSEGES==";
+            std::cout<<"==SZINT LEPES LEHETSEGES==\n";
         }
         std::cout<<"0. Kilepes\n1. Utazas\n2. Pihenes\n3. Karakter statisztikai\n4. Szintlepes\nValasztas: ";
         std::cin >> valasztas;
@@ -261,17 +261,19 @@ void Jatek::karakterMenu()
     }
     else if(invValasztas==1)
     {
-        std::cout<<jatekos;
+        elvalasztas();
+        std::cout<< (*jatekos);
     }
     else if(invValasztas==2)
     {
+        elvalasztas();
         jatekos->italokKilistazasa();
     }
     else if(invValasztas==3)
     {
         if(jatekos->getElsodlegesFegyver() != NULL)
         {
-            std::cout<<jatekos->getElsodlegesFegyver();
+            std::cout<<(*jatekos->getElsodlegesFegyver());
         }
         else
         {
@@ -286,13 +288,10 @@ Jatek::~Jatek()
         delete jatekos;
     if(betoltottTargyak.size() > 0)
     {
-        if(betoltottTargyak.size()>0)
+        for(size_t i = betoltottTargyak.size();i>0;i--)
         {
-            for(size_t i = betoltottTargyak.size();i>0;i--)
-            {
-                delete betoltottTargyak[i];
-                betoltottTargyak.pop_back();
-            }
+            delete betoltottTargyak[i-1];
+            betoltottTargyak.pop_back();
         }
     }
 }

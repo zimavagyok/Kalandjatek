@@ -13,13 +13,13 @@ class Fegyver : public Targy
         Fegyver(std::string Nev,int VeteliAr,int EladasiAr,int TamadasPlusz,int KritikusSebzes);
         virtual ~Fegyver();
 
-        int getKritikusSebzes() {return kritikusSebzes;}
+        int getKritikusSebzes() const {return kritikusSebzes;}
         void setKritikusSebzes(int KritikusSebzes) {kritikusSebzes = KritikusSebzes;}
         Fegyver* clone() const;
         void hasznal(Jatekos& jatekos);
         void vasarol(Jatekos&);
 };
 
-std::ostream& operator<<(std::ostream& out, Fegyver& fegyver);
+std::ostream& operator<<(std::ostream& out,const Fegyver& fegyver);
 
 #endif // FEGYVER_H

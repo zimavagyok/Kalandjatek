@@ -34,7 +34,7 @@ void Karakter::takeSebzes(int Sebzes)
 
 std::ostream& operator<<(std::ostream& out, const Karakter& karakter)
 {
-    out << karakter.getNev() << "\nHp: " << karakter.getEletero()
+       return out << karakter.getNev() << "\nHp: " << karakter.getEletero()
         << "\nTp: "<<karakter.getTapasztalat()
         << "\nArany: "<<karakter.getArany()
         << "\nSebzes: "<<karakter.getSebzes()

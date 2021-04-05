@@ -8,7 +8,7 @@ Targy::Targy() : nev(""), veteliAr(0), eladasiAr(0),tamadasPlusz(0)
 
 Targy::Targy(std::string Nev, int VeteliAr, int EladasiAr, int TamadasPlusz) : nev(Nev), veteliAr(VeteliAr), eladasiAr(EladasiAr), tamadasPlusz(TamadasPlusz) {}
 
-std::ostream& operator<<(std::ostream& out,Targy& targy)
+std::ostream& operator<<(std::ostream& out,const Targy& targy)
 {
     return out << targy.getNev()
                 << "\n\tVeteli ar: " << targy.getVeteliAr()
