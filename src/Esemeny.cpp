@@ -9,7 +9,7 @@ Esemeny::Esemeny()
 void Esemeny::generalEsemeny(Jatekos& jatekos, std::vector<Targy*> targyak)
 {
     int randomSzam = rand() % 100 + 1;
-    if(randomSzam>70)
+    if(randomSzam>80)
     {
         this->boltTalalkozas(jatekos,targyak);
     }
@@ -34,6 +34,8 @@ void Esemeny::boltTalalkozas(Jatekos& jatekos,std::vector<Targy*> targyak)
         while(valasztas<0 || valasztas>2)
         {
             std::cout<<"Rossz valasztas!\n";
+            std::cin.clear();
+			std::cin.ignore(100, '\n');
             std::cout << "Valasztas: ";
             std::cin>>valasztas;
         }
@@ -57,6 +59,8 @@ void Esemeny::boltTalalkozas(Jatekos& jatekos,std::vector<Targy*> targyak)
             while(vasarlasValaszt<-1 || vasarlasValaszt>=(int)targyak.size())
             {
                 std::cout<<"Hibas valasztas!\n";
+                std::cin.clear();
+                std::cin.ignore(100, '\n');
                 std::cout<<"Valasztas: ";
                 std::cin>>vasarlasValaszt;
             }
@@ -91,6 +95,8 @@ void Esemeny::boltTalalkozas(Jatekos& jatekos,std::vector<Targy*> targyak)
                 while(eladasValasztas<-1 || eladasValasztas>=jatekos.italokSzama())
                 {
                     std::cout<<"Hibas valasztas!\n";
+                    std::cin.clear();
+                    std::cin.ignore(100, '\n');
                     std::cout<<"Valasztas: ";
                     std::cin>>eladasValasztas;
                 }
@@ -128,8 +134,8 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
     bool ellensegekLegyozve = false;
 
     std::vector<Ellenseg*> ellensegek;
-    //int ellenfelekSzama = rand() % 4 + 1;
-    int ellenfelekSzama = 3;
+    const int maxEllenfelek = 3;
+    int ellenfelekSzama = rand() % maxEllenfelek + 1;
     for(int i = 0;i<ellenfelekSzama;i++)
     {
         ellensegek.push_back(new Ellenseg(jatekos.getSzint() + rand()%2));
@@ -148,7 +154,10 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
             std::cin>>valasztas;
             while(std::cin.fail() || valasztas > 3 || valasztas < 0)
             {
-                std::cout<<"Rossz valasztas!\nValasztas: ";
+                std::cout<<"Rossz valasztas!\n";
+                std::cin.clear();
+                std::cin.ignore(100, '\n');
+                std::cout<<"Valasztas: ";
                 std::cin>>valasztas;
             }
 
@@ -172,7 +181,10 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
 
                         while(std::cin.fail() || (size_t)valasztas >= ellensegek.size() || valasztas<0)
                         {
-                            std::cout<<"Rossz valasztas!\nValasztas: ";
+                            std::cout<<"Rossz valasztas!\n";
+                            std::cin.clear();
+                            std::cin.ignore(100, '\n');
+                            std::cout<<"Valasztas: ";
                             std::cin>>valasztas;
                         }
 
@@ -207,34 +219,36 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
                     }
                 case 2:
                     {
-                        std::cout<<"Nalad levo targyak: \n";
-                        std::cout<<"-1. Kilepes\n";
-                        jatekos.italokKilistazasa();
-                        std::cout<<"Valasztas: ";
-                        std::cin>>valasztas;
-                        while(std::cin.fail() || valasztas<-1 || valasztas >= jatekos.italokSzama())
+                        if(jatekos.italokSzama()>0)
                         {
-                            std::cout<<"Hibas valasztas!\n";
+                            std::cout<<"Nalad levo targyak: \n";
+                            std::cout<<"-1. Kilepes\n";
+                            jatekos.italokKilistazasa();
                             std::cout<<"Valasztas: ";
                             std::cin>>valasztas;
-                        }
+                            while(std::cin.fail() || valasztas<-1 || valasztas >= jatekos.italokSzama())
+                            {
+                                std::cout<<"Hibas valasztas!\n";
+                                std::cin.clear();
+                                std::cin.ignore(100, '\n');
+                                std::cout<<"Valasztas: ";
+                                std::cin>>valasztas;
+                            }
 
-                        if(valasztas==-1)
-                        {
-                            break;
-                        }
-                        else
-                        {
-                            if(jatekos.italokSzama()>0)
+                            if(valasztas==-1)
+                            {
+                                break;
+                            }
+                            else
                             {
                                 jatekos.addEletero(jatekos.getItal(valasztas)->getEleteroPlusz());
                                 std::cout<<"Megittad az italt! Az uj eleterod: "<<jatekos.getEletero()<<std::endl;
                                 jatekos.removeItal(valasztas);
                             }
-                            else
-                            {
-                                std::cout<<"Nincs nalad ital!\n";
-                            }
+                        }
+                        else
+                        {
+                            std::cout<<"Nincs nalad ital!\n";
                         }
                         break;
                     }
@@ -258,7 +272,7 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
             for(size_t i = 0;i<ellensegek.size();i++)
             {
                 int jatekosVeletlen = rand() % jatekos.getMaxEletero() + 1;
-                int ellenfelVeletlen = rand() % ellensegek[valasztas]->getEletero() + 10;
+                int ellenfelVeletlen = rand() % ellensegek[i]->getEletero() + 10;
                 if(jatekosVeletlen<ellenfelVeletlen)
                 {
                     std::cout<<"\nTALALT!\n";
@@ -266,12 +280,13 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
                     jatekos.takeSebzes(sebzes);
 
                     std::cout<<"Sebzes: "<<sebzes<<"!\n";
-                    std::cout<<"Eletero: "<<jatekos.getEletero() << " / "<<jatekos.getMaxEletero()<<std::endl;
+                    std::cout<<"Eleterod: "<<jatekos.getEletero() << " / "<<jatekos.getMaxEletero()<<std::endl;
 
                     if(!jatekos.eletben())
                     {
                         std::cout<<"Legyoztek!\n";
                         jatekosLegyozve = true;
+                        break;
                     }
                 }
                 else
@@ -285,16 +300,16 @@ void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
         if(!jatekos.eletben())
         {
             jatekosLegyozve = true;
-            for(int i = ellensegek.size()-1;i>0;i++)
-            {
-                delete ellensegek[i];
-                ellensegek.pop_back();
-            }
         }
         else if(ellensegek.size() <= 0)
         {
             ellensegekLegyozve = true;
         }
+    }
+    for(size_t i = ellensegek.size();i>0;i--)
+    {
+        delete ellensegek[i-1];
+        ellensegek.pop_back();
     }
 }
 

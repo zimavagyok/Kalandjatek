@@ -1,0 +1,27 @@
+var class_karakter =
+[
+    [ "Karakter", "class_karakter.html#a94341941130398d1f6509d6da6481db8", null ],
+    [ "Karakter", "class_karakter.html#a89329b98b2914a2bdae5ff3c06680a8e", null ],
+    [ "~Karakter", "class_karakter.html#ab343869c03a0998e95caae946cd8c31d", null ],
+    [ "addArany", "class_karakter.html#a4f9b6e6938300b6d988d2d8d802e3354", null ],
+    [ "addTp", "class_karakter.html#a0fdfa210ccc3ee1729998817d840c268", null ],
+    [ "eletben", "class_karakter.html#a6acbf6fbf5b8f2e81e02e00efff181ed", null ],
+    [ "getArany", "class_karakter.html#a17dd5b1790eb7d10e4fe8af7fd95b5a4", null ],
+    [ "getEletero", "class_karakter.html#a9396e2d58d2400555507b13d65a1b204", null ],
+    [ "getMaxSebzes", "class_karakter.html#ac39eb2e9edfd2356ff7b607a2dec2bdb", null ],
+    [ "getMinSebzes", "class_karakter.html#a2767bdd2821c845a4d5dfffb8cfb6c3d", null ],
+    [ "getNev", "class_karakter.html#adb5842f886870a09d8a389d17e3ebaac", null ],
+    [ "getSebzes", "class_karakter.html#a9597ce1a1d8cd793e132c94061975ed8", null ],
+    [ "getTapasztalat", "class_karakter.html#a984fdd8baab6eef98058678fe0392ea7", null ],
+    [ "getVedekezes", "class_karakter.html#a213a82667019b74a94a10dbed9c8bfa1", null ],
+    [ "levonArany", "class_karakter.html#a70e7dda9eef9a4b6a015f4cb6b3e5660", null ],
+    [ "setArany", "class_karakter.html#a8f85cb158fd30773e0b36bec8ab7fbaf", null ],
+    [ "setEletero", "class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4", null ],
+    [ "setMaxSebzes", "class_karakter.html#a4a86ffa9fc45bac6f4d53dbf8be54258", null ],
+    [ "setMinSebzes", "class_karakter.html#aea9b600d2251f44edf08e132f1b377cd", null ],
+    [ "setNev", "class_karakter.html#ac3f695d616421f4dd0bc423d1f4e0403", null ],
+    [ "setTapasztalat", "class_karakter.html#aca0930b22657eb4613ebb4c219797486", null ],
+    [ "setVedekezes", "class_karakter.html#a721ce4cfe20efa982e262b359d477938", null ],
+    [ "takeSebzes", "class_karakter.html#a2fcd7208aefc2ad5be834299c920b669", null ],
+    [ "tamadas", "class_karakter.html#a71775437b7dd5e85e25a216bc6fd798b", null ]
+];

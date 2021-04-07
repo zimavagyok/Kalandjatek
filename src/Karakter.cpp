@@ -23,7 +23,7 @@ Karakter::Karakter(std::string Nev, int Eletero, int Tapasztalat, int Arany, int
     vedekezes = Vedekezes;
 }
 
-void Karakter::takeSebzes(int Sebzes)
+void Karakter::takeSebzes(const int Sebzes)
 {
     eletero-=Sebzes;
     if(eletero<0)

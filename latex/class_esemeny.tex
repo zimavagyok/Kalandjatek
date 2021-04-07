@@ -1,0 +1,69 @@
+\hypertarget{class_esemeny}{}\doxysection{Esemeny osztályreferencia}
+\label{class_esemeny}\index{Esemeny@{Esemeny}}
+
+
+{\ttfamily \#include $<$Esemeny.\+h$>$}
+
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_esemeny_aa2317219b5ebf9065c46a6b4527ef097}\label{class_esemeny_aa2317219b5ebf9065c46a6b4527ef097}} 
+\mbox{\hyperlink{class_esemeny_aa2317219b5ebf9065c46a6b4527ef097}{Esemeny}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor, ami létrehozza az objektumot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_esemeny_a2473e22c76a6bfa59577a19faa4245a0}\label{class_esemeny_a2473e22c76a6bfa59577a19faa4245a0}} 
+virtual \mbox{\hyperlink{class_esemeny_a2473e22c76a6bfa59577a19faa4245a0}{$\sim$\+Esemeny}} ()
+\begin{DoxyCompactList}\small\item\em Virtuális destruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_esemeny_a2f27df1f752864189f13ff7535cbceb9}{general\+Esemeny}} (\mbox{\hyperlink{class_jatekos}{Jatekos}} \&jatekos, std\+::vector$<$ \mbox{\hyperlink{class_targy}{Targy}} $\ast$ $>$ targyak)
+\item 
+void \mbox{\hyperlink{class_esemeny_a594291f95e40eb9e821671d8a0ef2294}{bolt\+Talalkozas}} (\mbox{\hyperlink{class_jatekos}{Jatekos}} \&jatekos, std\+::vector$<$ \mbox{\hyperlink{class_targy}{Targy}} $\ast$ $>$ targyak)
+\item 
+void \mbox{\hyperlink{class_esemeny_ab91207e48d7c09d86789e52d3fec65fc}{ellenfel\+Talalkozas}} (\mbox{\hyperlink{class_jatekos}{Jatekos}} \&jatekos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+\mbox{\hyperlink{class_esemeny}{Esemeny}} osztály 
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_esemeny_a594291f95e40eb9e821671d8a0ef2294}\label{class_esemeny_a594291f95e40eb9e821671d8a0ef2294}} 
+\index{Esemeny@{Esemeny}!boltTalalkozas@{boltTalalkozas}}
+\index{boltTalalkozas@{boltTalalkozas}!Esemeny@{Esemeny}}
+\doxysubsubsection{\texorpdfstring{boltTalalkozas()}{boltTalalkozas()}}
+{\footnotesize\ttfamily void Esemeny\+::bolt\+Talalkozas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jatekos}{Jatekos}} \&}]{jatekos,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_targy}{Targy}} $\ast$ $>$}]{targyak }\end{DoxyParamCaption})}
+
+Bolt esemény logikája 
+\begin{DoxyParams}{Paraméterek}
+{\em jatekos} & -\/ A játékos referenciája, aki vásárol \\
+\hline
+{\em targyak} & -\/ A játékban található tárgyak listája \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_esemeny_ab91207e48d7c09d86789e52d3fec65fc}\label{class_esemeny_ab91207e48d7c09d86789e52d3fec65fc}} 
+\index{Esemeny@{Esemeny}!ellenfelTalalkozas@{ellenfelTalalkozas}}
+\index{ellenfelTalalkozas@{ellenfelTalalkozas}!Esemeny@{Esemeny}}
+\doxysubsubsection{\texorpdfstring{ellenfelTalalkozas()}{ellenfelTalalkozas()}}
+{\footnotesize\ttfamily void Esemeny\+::ellenfel\+Talalkozas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jatekos}{Jatekos}} \&}]{jatekos }\end{DoxyParamCaption})}
+
+Harc esemény logikája 
+\begin{DoxyParams}{Paraméterek}
+{\em jatekos} & -\/ A játékos referenciája, aki harcba keveredik \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_esemeny_a2f27df1f752864189f13ff7535cbceb9}\label{class_esemeny_a2f27df1f752864189f13ff7535cbceb9}} 
+\index{Esemeny@{Esemeny}!generalEsemeny@{generalEsemeny}}
+\index{generalEsemeny@{generalEsemeny}!Esemeny@{Esemeny}}
+\doxysubsubsection{\texorpdfstring{generalEsemeny()}{generalEsemeny()}}
+{\footnotesize\ttfamily void Esemeny\+::general\+Esemeny (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jatekos}{Jatekos}} \&}]{jatekos,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_targy}{Targy}} $\ast$ $>$}]{targyak }\end{DoxyParamCaption})}
+
+Utazás esemény véletlenszerű generálása 
+\begin{DoxyParams}{Paraméterek}
+{\em jatekos} & -\/ A játékos referenciája, akivel történik az esemény \\
+\hline
+{\em targyak} & -\/ A játékban található tárgyak listája \\
+\hline
+\end{DoxyParams}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_esemeny_8h}{Esemeny.\+h}}\end{DoxyCompactItemize}

@@ -174,6 +174,15 @@ void Jatekos::eladItal(const int index)
     removeItal(index);
 }
 
+void Jatekos::addEletero(const int mennyit)
+{
+    setEletero(getEletero()+mennyit);
+    if(getEletero()>getMaxEletero())
+    {
+        maxElet();
+    }
+}
+
 Jatekos::~Jatekos()
 {
     if(elsodlegesFegyver!=NULL)

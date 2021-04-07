@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalandjáték: include/Ellenseg.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kalandjáték
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_ellenseg_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Ellenseg.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ellenseg_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ELLENSEG_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ELLENSEG_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_karakter_8h.html">Karakter.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_ellenseg.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ellenseg.html">Ellenseg</a> : <span class="keyword">public</span> <a class="code" href="class_karakter.html">Karakter</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">double</span> maxTamadasSzorzo; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_ellenseg.html#ad8ad2a281d880bd41674c720c95ed898">   21</a></span>&#160;        <a class="code" href="class_ellenseg.html#ad8ad2a281d880bd41674c720c95ed898">Ellenseg</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_ellenseg.html#ab754786eae0a51099410c3564ae696fa">   25</a></span>&#160;        <a class="code" href="class_ellenseg.html#ab754786eae0a51099410c3564ae696fa">Ellenseg</a>(<span class="keywordtype">int</span> szint);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_ellenseg.html#ab42423ab933dad07b3bac0b44589e7e4">   36</a></span>&#160;        <a class="code" href="class_ellenseg.html#ab42423ab933dad07b3bac0b44589e7e4">Ellenseg</a>(std::string Nev,<span class="keywordtype">int</span> Eletero,<span class="keywordtype">int</span> Tapasztalat,<span class="keywordtype">int</span> Arany,<span class="keywordtype">int</span> MinSebzes,<span class="keywordtype">int</span> MaxSebzes,<span class="keywordtype">int</span> Vedekezes,<span class="keywordtype">double</span> MaxTamadasSzorzo);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_ellenseg.html#a3825c0148f792213cad4e848d84e3efc">   39</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_ellenseg.html#a3825c0148f792213cad4e848d84e3efc">~Ellenseg</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_ellenseg.html#abeb0710c256e48d3626902f1496409cc">   43</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_ellenseg.html#abeb0710c256e48d3626902f1496409cc">getMaxTamadasSzorzo</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> maxTamadasSzorzo;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_ellenseg.html#a4672b3b82e1e78e236c271def0e00c60">   47</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_ellenseg.html#a4672b3b82e1e78e236c271def0e00c60">setMaxTamadasSzorzo</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> MaxTamadasSzorzo) {maxTamadasSzorzo = MaxTamadasSzorzo;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_ellenseg.html#a7385b8e5a64188103fe333fb4f59cf77">   51</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_ellenseg.html#a7385b8e5a64188103fe333fb4f59cf77">tamadas</a>(<a class="code" href="class_karakter.html">Karakter</a>&amp; kit);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="_ellenseg_8h.html#aa98ff25a7360953efc826668dbffafb1">   58</a></span>&#160;std::ostream&amp; <a class="code" href="_ellenseg_8h.html#aa98ff25a7360953efc826668dbffafb1">operator&lt;&lt;</a>(std::ostream&amp; out,<span class="keyword">const</span> <a class="code" href="class_ellenseg.html">Ellenseg</a>&amp; ellenseg);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ELLENSEG_H</span></div>
+<div class="ttc" id="a_ellenseg_8h_html_aa98ff25a7360953efc826668dbffafb1"><div class="ttname"><a href="_ellenseg_8h.html#aa98ff25a7360953efc826668dbffafb1">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Ellenseg &amp;ellenseg)</div></div>
+<div class="ttc" id="a_karakter_8h_html"><div class="ttname"><a href="_karakter_8h.html">Karakter.h</a></div></div>
+<div class="ttc" id="aclass_ellenseg_html"><div class="ttname"><a href="class_ellenseg.html">Ellenseg</a></div><div class="ttdef"><b>Definition:</b> Ellenseg.h:17</div></div>
+<div class="ttc" id="aclass_ellenseg_html_a3825c0148f792213cad4e848d84e3efc"><div class="ttname"><a href="class_ellenseg.html#a3825c0148f792213cad4e848d84e3efc">Ellenseg::~Ellenseg</a></div><div class="ttdeci">virtual ~Ellenseg()</div><div class="ttdoc">Virtu�lis destruktor.</div></div>
+<div class="ttc" id="aclass_ellenseg_html_a4672b3b82e1e78e236c271def0e00c60"><div class="ttname"><a href="class_ellenseg.html#a4672b3b82e1e78e236c271def0e00c60">Ellenseg::setMaxTamadasSzorzo</a></div><div class="ttdeci">void setMaxTamadasSzorzo(const double MaxTamadasSzorzo)</div><div class="ttdef"><b>Definition:</b> Ellenseg.h:47</div></div>
+<div class="ttc" id="aclass_ellenseg_html_a7385b8e5a64188103fe333fb4f59cf77"><div class="ttname"><a href="class_ellenseg.html#a7385b8e5a64188103fe333fb4f59cf77">Ellenseg::tamadas</a></div><div class="ttdeci">void tamadas(Karakter &amp;kit)</div></div>
+<div class="ttc" id="aclass_ellenseg_html_ab42423ab933dad07b3bac0b44589e7e4"><div class="ttname"><a href="class_ellenseg.html#ab42423ab933dad07b3bac0b44589e7e4">Ellenseg::Ellenseg</a></div><div class="ttdeci">Ellenseg(std::string Nev, int Eletero, int Tapasztalat, int Arany, int MinSebzes, int MaxSebzes, int Vedekezes, double MaxTamadasSzorzo)</div></div>
+<div class="ttc" id="aclass_ellenseg_html_ab754786eae0a51099410c3564ae696fa"><div class="ttname"><a href="class_ellenseg.html#ab754786eae0a51099410c3564ae696fa">Ellenseg::Ellenseg</a></div><div class="ttdeci">Ellenseg(int szint)</div></div>
+<div class="ttc" id="aclass_ellenseg_html_abeb0710c256e48d3626902f1496409cc"><div class="ttname"><a href="class_ellenseg.html#abeb0710c256e48d3626902f1496409cc">Ellenseg::getMaxTamadasSzorzo</a></div><div class="ttdeci">double getMaxTamadasSzorzo() const</div><div class="ttdef"><b>Definition:</b> Ellenseg.h:43</div></div>
+<div class="ttc" id="aclass_ellenseg_html_ad8ad2a281d880bd41674c720c95ed898"><div class="ttname"><a href="class_ellenseg.html#ad8ad2a281d880bd41674c720c95ed898">Ellenseg::Ellenseg</a></div><div class="ttdeci">Ellenseg()</div><div class="ttdoc">Konstruktor be�ll�tja az attrib�tumokat.</div></div>
+<div class="ttc" id="aclass_karakter_html"><div class="ttname"><a href="class_karakter.html">Karakter</a></div><div class="ttdef"><b>Definition:</b> Karakter.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_ellenseg_8h.html">Ellenseg.h</a></li>
+    <li class="footer">Készítette <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

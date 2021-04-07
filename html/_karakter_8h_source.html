@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalandjáték: include/Karakter.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kalandjáték
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_karakter_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Karakter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_karakter_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KARAKTER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KARAKTER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_karakter.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_karakter.html">Karakter</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::string nev; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> eletero; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> tapasztalat; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> arany; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> minSebzes; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> maxSebzes; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> vedekezes; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_karakter.html#a94341941130398d1f6509d6da6481db8">   25</a></span>&#160;        <a class="code" href="class_karakter.html#a94341941130398d1f6509d6da6481db8">Karakter</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_karakter.html#a89329b98b2914a2bdae5ff3c06680a8e">   34</a></span>&#160;        <a class="code" href="class_karakter.html#a89329b98b2914a2bdae5ff3c06680a8e">Karakter</a>(std::string Nev,<span class="keywordtype">int</span> Eletero,<span class="keywordtype">int</span> Tapasztalat,<span class="keywordtype">int</span> Arany,<span class="keywordtype">int</span> MinSebzes,<span class="keywordtype">int</span> MaxSebzes,<span class="keywordtype">int</span> Vedekezes);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_karakter.html#ab343869c03a0998e95caae946cd8c31d">   37</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_karakter.html#ab343869c03a0998e95caae946cd8c31d">~Karakter</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_karakter.html#adb5842f886870a09d8a389d17e3ebaac">   41</a></span>&#160;        std::string <a class="code" href="class_karakter.html#adb5842f886870a09d8a389d17e3ebaac">getNev</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> nev;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_karakter.html#ac3f695d616421f4dd0bc423d1f4e0403">   45</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#ac3f695d616421f4dd0bc423d1f4e0403">setNev</a>(<span class="keyword">const</span> std::string Nev) {nev = Nev;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_karakter.html#a9396e2d58d2400555507b13d65a1b204">   49</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#a9396e2d58d2400555507b13d65a1b204">getEletero</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> eletero;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4">   53</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4">setEletero</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Eletero) {eletero = Eletero;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_karakter.html#a984fdd8baab6eef98058678fe0392ea7">   57</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#a984fdd8baab6eef98058678fe0392ea7">getTapasztalat</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> tapasztalat;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_karakter.html#aca0930b22657eb4613ebb4c219797486">   61</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#aca0930b22657eb4613ebb4c219797486">setTapasztalat</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Tapasztalat) {tapasztalat = Tapasztalat;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_karakter.html#a17dd5b1790eb7d10e4fe8af7fd95b5a4">   65</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#a17dd5b1790eb7d10e4fe8af7fd95b5a4">getArany</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> arany;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_karakter.html#a8f85cb158fd30773e0b36bec8ab7fbaf">   69</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a8f85cb158fd30773e0b36bec8ab7fbaf">setArany</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Arany) {arany = Arany;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_karakter.html#a70e7dda9eef9a4b6a015f4cb6b3e5660">   73</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a70e7dda9eef9a4b6a015f4cb6b3e5660">levonArany</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Arany) {arany -= Arany;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_karakter.html#a2767bdd2821c845a4d5dfffb8cfb6c3d">   77</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#a2767bdd2821c845a4d5dfffb8cfb6c3d">getMinSebzes</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> minSebzes;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_karakter.html#aea9b600d2251f44edf08e132f1b377cd">   81</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#aea9b600d2251f44edf08e132f1b377cd">setMinSebzes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> MinSebzes) {minSebzes = MinSebzes;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_karakter.html#ac39eb2e9edfd2356ff7b607a2dec2bdb">   85</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#ac39eb2e9edfd2356ff7b607a2dec2bdb">getMaxSebzes</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> maxSebzes;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_karakter.html#a4a86ffa9fc45bac6f4d53dbf8be54258">   89</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a4a86ffa9fc45bac6f4d53dbf8be54258">setMaxSebzes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> MaxSebzes) {maxSebzes = MaxSebzes;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_karakter.html#a213a82667019b74a94a10dbed9c8bfa1">   93</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#a213a82667019b74a94a10dbed9c8bfa1">getVedekezes</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> vedekezes;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_karakter.html#a721ce4cfe20efa982e262b359d477938">   97</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a721ce4cfe20efa982e262b359d477938">setVedekezes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Vedekezes) {vedekezes = Vedekezes;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_karakter.html#a9597ce1a1d8cd793e132c94061975ed8">  101</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_karakter.html#a9597ce1a1d8cd793e132c94061975ed8">getSebzes</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> rand() % maxSebzes + minSebzes;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_karakter.html#a4f9b6e6938300b6d988d2d8d802e3354">  105</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a4f9b6e6938300b6d988d2d8d802e3354">addArany</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mennyit) {arany+=mennyit;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_karakter.html#a0fdfa210ccc3ee1729998817d840c268">  109</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a0fdfa210ccc3ee1729998817d840c268">addTp</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mennyit) {tapasztalat+=mennyit;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_karakter.html#a71775437b7dd5e85e25a216bc6fd798b">  113</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a71775437b7dd5e85e25a216bc6fd798b">tamadas</a>(<a class="code" href="class_karakter.html">Karakter</a>&amp; kit) = 0;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_karakter.html#a2fcd7208aefc2ad5be834299c920b669">  117</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_karakter.html#a2fcd7208aefc2ad5be834299c920b669">takeSebzes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Sebzes);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_karakter.html#a6acbf6fbf5b8f2e81e02e00efff181ed">  121</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_karakter.html#a6acbf6fbf5b8f2e81e02e00efff181ed">eletben</a>() {<span class="keywordflow">return</span> eletero &gt; 0;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="_karakter_8h.html#a9f78d90777502e8eb614841b470cfc04">  128</a></span>&#160;std::ostream&amp; <a class="code" href="_karakter_8h.html#a9f78d90777502e8eb614841b470cfc04">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="class_karakter.html">Karakter</a>&amp; karakter);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KARAKTER_H</span></div>
+<div class="ttc" id="a_karakter_8h_html_a9f78d90777502e8eb614841b470cfc04"><div class="ttname"><a href="_karakter_8h.html#a9f78d90777502e8eb614841b470cfc04">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Karakter &amp;karakter)</div></div>
+<div class="ttc" id="aclass_karakter_html"><div class="ttname"><a href="class_karakter.html">Karakter</a></div><div class="ttdef"><b>Definition:</b> Karakter.h:15</div></div>
+<div class="ttc" id="aclass_karakter_html_a0fdfa210ccc3ee1729998817d840c268"><div class="ttname"><a href="class_karakter.html#a0fdfa210ccc3ee1729998817d840c268">Karakter::addTp</a></div><div class="ttdeci">void addTp(const int mennyit)</div><div class="ttdef"><b>Definition:</b> Karakter.h:109</div></div>
+<div class="ttc" id="aclass_karakter_html_a17dd5b1790eb7d10e4fe8af7fd95b5a4"><div class="ttname"><a href="class_karakter.html#a17dd5b1790eb7d10e4fe8af7fd95b5a4">Karakter::getArany</a></div><div class="ttdeci">int getArany() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:65</div></div>
+<div class="ttc" id="aclass_karakter_html_a213a82667019b74a94a10dbed9c8bfa1"><div class="ttname"><a href="class_karakter.html#a213a82667019b74a94a10dbed9c8bfa1">Karakter::getVedekezes</a></div><div class="ttdeci">int getVedekezes() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:93</div></div>
+<div class="ttc" id="aclass_karakter_html_a2767bdd2821c845a4d5dfffb8cfb6c3d"><div class="ttname"><a href="class_karakter.html#a2767bdd2821c845a4d5dfffb8cfb6c3d">Karakter::getMinSebzes</a></div><div class="ttdeci">int getMinSebzes() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:77</div></div>
+<div class="ttc" id="aclass_karakter_html_a2fcd7208aefc2ad5be834299c920b669"><div class="ttname"><a href="class_karakter.html#a2fcd7208aefc2ad5be834299c920b669">Karakter::takeSebzes</a></div><div class="ttdeci">void takeSebzes(const int Sebzes)</div></div>
+<div class="ttc" id="aclass_karakter_html_a48f8bcdf00f6d1e272716aeb51e714f4"><div class="ttname"><a href="class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4">Karakter::setEletero</a></div><div class="ttdeci">void setEletero(const int Eletero)</div><div class="ttdef"><b>Definition:</b> Karakter.h:53</div></div>
+<div class="ttc" id="aclass_karakter_html_a4a86ffa9fc45bac6f4d53dbf8be54258"><div class="ttname"><a href="class_karakter.html#a4a86ffa9fc45bac6f4d53dbf8be54258">Karakter::setMaxSebzes</a></div><div class="ttdeci">void setMaxSebzes(const int MaxSebzes)</div><div class="ttdef"><b>Definition:</b> Karakter.h:89</div></div>
+<div class="ttc" id="aclass_karakter_html_a4f9b6e6938300b6d988d2d8d802e3354"><div class="ttname"><a href="class_karakter.html#a4f9b6e6938300b6d988d2d8d802e3354">Karakter::addArany</a></div><div class="ttdeci">void addArany(const int mennyit)</div><div class="ttdef"><b>Definition:</b> Karakter.h:105</div></div>
+<div class="ttc" id="aclass_karakter_html_a6acbf6fbf5b8f2e81e02e00efff181ed"><div class="ttname"><a href="class_karakter.html#a6acbf6fbf5b8f2e81e02e00efff181ed">Karakter::eletben</a></div><div class="ttdeci">bool eletben()</div><div class="ttdef"><b>Definition:</b> Karakter.h:121</div></div>
+<div class="ttc" id="aclass_karakter_html_a70e7dda9eef9a4b6a015f4cb6b3e5660"><div class="ttname"><a href="class_karakter.html#a70e7dda9eef9a4b6a015f4cb6b3e5660">Karakter::levonArany</a></div><div class="ttdeci">void levonArany(const int Arany)</div><div class="ttdef"><b>Definition:</b> Karakter.h:73</div></div>
+<div class="ttc" id="aclass_karakter_html_a71775437b7dd5e85e25a216bc6fd798b"><div class="ttname"><a href="class_karakter.html#a71775437b7dd5e85e25a216bc6fd798b">Karakter::tamadas</a></div><div class="ttdeci">virtual void tamadas(Karakter &amp;kit)=0</div></div>
+<div class="ttc" id="aclass_karakter_html_a721ce4cfe20efa982e262b359d477938"><div class="ttname"><a href="class_karakter.html#a721ce4cfe20efa982e262b359d477938">Karakter::setVedekezes</a></div><div class="ttdeci">void setVedekezes(const int Vedekezes)</div><div class="ttdef"><b>Definition:</b> Karakter.h:97</div></div>
+<div class="ttc" id="aclass_karakter_html_a89329b98b2914a2bdae5ff3c06680a8e"><div class="ttname"><a href="class_karakter.html#a89329b98b2914a2bdae5ff3c06680a8e">Karakter::Karakter</a></div><div class="ttdeci">Karakter(std::string Nev, int Eletero, int Tapasztalat, int Arany, int MinSebzes, int MaxSebzes, int Vedekezes)</div></div>
+<div class="ttc" id="aclass_karakter_html_a8f85cb158fd30773e0b36bec8ab7fbaf"><div class="ttname"><a href="class_karakter.html#a8f85cb158fd30773e0b36bec8ab7fbaf">Karakter::setArany</a></div><div class="ttdeci">void setArany(const int Arany)</div><div class="ttdef"><b>Definition:</b> Karakter.h:69</div></div>
+<div class="ttc" id="aclass_karakter_html_a9396e2d58d2400555507b13d65a1b204"><div class="ttname"><a href="class_karakter.html#a9396e2d58d2400555507b13d65a1b204">Karakter::getEletero</a></div><div class="ttdeci">int getEletero() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:49</div></div>
+<div class="ttc" id="aclass_karakter_html_a94341941130398d1f6509d6da6481db8"><div class="ttname"><a href="class_karakter.html#a94341941130398d1f6509d6da6481db8">Karakter::Karakter</a></div><div class="ttdeci">Karakter()</div><div class="ttdoc">Konstruktor beállítja az attribútumokat.</div></div>
+<div class="ttc" id="aclass_karakter_html_a9597ce1a1d8cd793e132c94061975ed8"><div class="ttname"><a href="class_karakter.html#a9597ce1a1d8cd793e132c94061975ed8">Karakter::getSebzes</a></div><div class="ttdeci">int getSebzes() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:101</div></div>
+<div class="ttc" id="aclass_karakter_html_a984fdd8baab6eef98058678fe0392ea7"><div class="ttname"><a href="class_karakter.html#a984fdd8baab6eef98058678fe0392ea7">Karakter::getTapasztalat</a></div><div class="ttdeci">int getTapasztalat() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:57</div></div>
+<div class="ttc" id="aclass_karakter_html_ab343869c03a0998e95caae946cd8c31d"><div class="ttname"><a href="class_karakter.html#ab343869c03a0998e95caae946cd8c31d">Karakter::~Karakter</a></div><div class="ttdeci">virtual ~Karakter()</div><div class="ttdoc">Virtuális destruktor.</div></div>
+<div class="ttc" id="aclass_karakter_html_ac39eb2e9edfd2356ff7b607a2dec2bdb"><div class="ttname"><a href="class_karakter.html#ac39eb2e9edfd2356ff7b607a2dec2bdb">Karakter::getMaxSebzes</a></div><div class="ttdeci">int getMaxSebzes() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:85</div></div>
+<div class="ttc" id="aclass_karakter_html_ac3f695d616421f4dd0bc423d1f4e0403"><div class="ttname"><a href="class_karakter.html#ac3f695d616421f4dd0bc423d1f4e0403">Karakter::setNev</a></div><div class="ttdeci">void setNev(const std::string Nev)</div><div class="ttdef"><b>Definition:</b> Karakter.h:45</div></div>
+<div class="ttc" id="aclass_karakter_html_aca0930b22657eb4613ebb4c219797486"><div class="ttname"><a href="class_karakter.html#aca0930b22657eb4613ebb4c219797486">Karakter::setTapasztalat</a></div><div class="ttdeci">void setTapasztalat(const int Tapasztalat)</div><div class="ttdef"><b>Definition:</b> Karakter.h:61</div></div>
+<div class="ttc" id="aclass_karakter_html_adb5842f886870a09d8a389d17e3ebaac"><div class="ttname"><a href="class_karakter.html#adb5842f886870a09d8a389d17e3ebaac">Karakter::getNev</a></div><div class="ttdeci">std::string getNev() const</div><div class="ttdef"><b>Definition:</b> Karakter.h:41</div></div>
+<div class="ttc" id="aclass_karakter_html_aea9b600d2251f44edf08e132f1b377cd"><div class="ttname"><a href="class_karakter.html#aea9b600d2251f44edf08e132f1b377cd">Karakter::setMinSebzes</a></div><div class="ttdeci">void setMinSebzes(const int MinSebzes)</div><div class="ttdef"><b>Definition:</b> Karakter.h:81</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_karakter_8h.html">Karakter.h</a></li>
+    <li class="footer">Készítette <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

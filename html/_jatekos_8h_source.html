@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalandjáték: include/Jatekos.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kalandjáték
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_jatekos_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Jatekos.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_jatekos_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef JATEKOS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define JATEKOS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_karakter_8h.html">Karakter.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ital_8h.html">Ital.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_fegyver_8h.html">Fegyver.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_jatekos.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_jatekos.html">Jatekos</a> : <span class="keyword">public</span> <a class="code" href="class_karakter.html">Karakter</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> szint; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> kovetkezoSzint; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> maxEletero; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> ero; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> eleteroSzint; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> statPontok; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::vector&lt;Ital*&gt; italok; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_fegyver.html">Fegyver</a> *elsodlegesFegyver; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_jatekos.html#a083ba53453a5a9da0aaffa5ed8c7359e">   34</a></span>&#160;        <a class="code" href="class_jatekos.html#a083ba53453a5a9da0aaffa5ed8c7359e">Jatekos</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_jatekos.html#a7e679666ac7a2fa02e402cc354f96fb1">   38</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a7e679666ac7a2fa02e402cc354f96fb1">initJatekos</a>(<span class="keyword">const</span> std::string Nev); <span class="comment">//done</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_jatekos.html#a37b497cfa4ae94ee3c43bb3c94e0b7d1">   41</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_jatekos.html#a37b497cfa4ae94ee3c43bb3c94e0b7d1">~Jatekos</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_jatekos.html#ac45ca0af588759dc6eaa6c6e28526132">   45</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#ac45ca0af588759dc6eaa6c6e28526132">getMaxEletero</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> maxEletero;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_jatekos.html#aa304ba725101833efb73bb4231f61e5d">   49</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#aa304ba725101833efb73bb4231f61e5d">setMaxEletero</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> MaxEletero) {maxEletero = MaxEletero;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_jatekos.html#a89b8a070b432e9db5cecbfc57001cc13">   53</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#a89b8a070b432e9db5cecbfc57001cc13">getSzint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> szint;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_jatekos.html#acfe520deb4bb5ee882fe0cb1e926eaaa">   57</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#acfe520deb4bb5ee882fe0cb1e926eaaa">setSzint</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Szint) {szint = Szint;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_jatekos.html#aceeda820c6c946553a24293878a01e73">   61</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#aceeda820c6c946553a24293878a01e73">getKovetkezoSzint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> kovetkezoSzint;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_jatekos.html#ac59a7f9875453d7ebf67a273c5880b13">   65</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#ac59a7f9875453d7ebf67a273c5880b13">setKovetkezoSzint</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> KovetkezoSzint) {kovetkezoSzint = KovetkezoSzint;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_jatekos.html#ac397d60f2fa8d0043bf1f0a701765ecd">   69</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#ac397d60f2fa8d0043bf1f0a701765ecd">getEro</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> ero;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_jatekos.html#a7f3d7152cff5baaadad4597044d5c8d5">   73</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a7f3d7152cff5baaadad4597044d5c8d5">setEro</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> Ero) {ero = Ero;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_jatekos.html#a40b5884d7b25bf7b901b0210e7eb4c1f">   77</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#a40b5884d7b25bf7b901b0210e7eb4c1f">getEleteroSzint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> eleteroSzint;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_jatekos.html#a975da493f0640d9b25ee61901bed9b6f">   81</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a975da493f0640d9b25ee61901bed9b6f">setEleteroSzint</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> EleteroSzint) {eleteroSzint = EleteroSzint;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_jatekos.html#ac148d84c4cfdcf9c45348a33bb028639">   84</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#ac148d84c4cfdcf9c45348a33bb028639">maxElet</a>() {<a class="code" href="class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4">setEletero</a>(maxEletero);}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_jatekos.html#abb381eea95243e49e66ff17e40fcb375">   88</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#abb381eea95243e49e66ff17e40fcb375">getStatPontok</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> statPontok;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_jatekos.html#a1741b13c85fe16464d9ae0fc0ee9e704">   92</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a1741b13c85fe16464d9ae0fc0ee9e704">setStatPontok</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> StatPontok) {statPontok = StatPontok;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_jatekos.html#a5cd659013bb9ef1e55b9d92bbd8bd48a">   96</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a5cd659013bb9ef1e55b9d92bbd8bd48a">tamadas</a>(<a class="code" href="class_karakter.html">Karakter</a>&amp; kit);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_jatekos.html#a6fe33b61c31f49434abad46e65882e75">  101</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a6fe33b61c31f49434abad46e65882e75">stathozAdas</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> stat,<span class="keyword">const</span> <span class="keywordtype">int</span> value); <span class="comment">//done</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_jatekos.html#a0968a6d4026be6f699e3cbf151fb5402">  104</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a0968a6d4026be6f699e3cbf151fb5402">statFrissites</a>(); <span class="comment">//done</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_jatekos.html#a49ecf0db03a55c342ee321e49f7620c2">  107</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a49ecf0db03a55c342ee321e49f7620c2">szintLepes</a>(); <span class="comment">//done</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_jatekos.html#a18b598e291be38f970bf9a627bc35892">  111</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a18b598e291be38f970bf9a627bc35892">addItal</a>(<span class="keyword">const</span> <a class="code" href="class_ital.html">Ital</a>&amp; ujItal); <span class="comment">//done</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_jatekos.html#a4d237b6b6a600c2f0e13d7c8f1b5bcc8">  115</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a4d237b6b6a600c2f0e13d7c8f1b5bcc8">removeItal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> index); <span class="comment">//done</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_jatekos.html#aec4dd05acc5241e013fd0face5123729">  119</a></span>&#160;        <a class="code" href="class_ital.html">Ital</a>* <a class="code" href="class_jatekos.html#aec4dd05acc5241e013fd0face5123729">getItal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> index) <span class="keyword">const</span>; <span class="comment">//done</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_jatekos.html#a562c1bc0b67f6919915d09576f84da79">  123</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a562c1bc0b67f6919915d09576f84da79">eladItal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_jatekos.html#a9edefd41b4f9d3ff23be4a29bcb4aafa">  127</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_jatekos.html#a9edefd41b4f9d3ff23be4a29bcb4aafa">italokSzama</a>() {<span class="keywordflow">return</span> italok.size();}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_jatekos.html#a3a7cc936534633ee99b204f14f826734">  131</a></span>&#160;        <a class="code" href="class_fegyver.html">Fegyver</a>* <a class="code" href="class_jatekos.html#a3a7cc936534633ee99b204f14f826734">getElsodlegesFegyver</a>() <span class="keyword">const</span>; <span class="comment">//done</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_jatekos.html#a4c76ac5a67e21f42c3db52065b971e81">  134</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#a4c76ac5a67e21f42c3db52065b971e81">italokKilistazasa</a>(); <span class="comment">//done</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="class_jatekos.html#af32265941449886400e9c784f154ab54">  138</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#af32265941449886400e9c784f154ab54">addEletero</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mennyit);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_jatekos.html#ac7197c2e414149707ca1ae099f5b9c2b">  142</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jatekos.html#ac7197c2e414149707ca1ae099f5b9c2b">setElsodlegesFegyver</a>(<span class="keyword">const</span> <a class="code" href="class_fegyver.html">Fegyver</a>&amp; ujFegyver);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="_jatekos_8h.html#a74b89ea1265b7e7bb4ed38f0ea0f2843">  149</a></span>&#160;std::ostream&amp; <a class="code" href="_jatekos_8h.html#a74b89ea1265b7e7bb4ed38f0ea0f2843">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="class_jatekos.html">Jatekos</a>&amp; jatekos);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// JATEKOS_H</span></div>
+<div class="ttc" id="a_fegyver_8h_html"><div class="ttname"><a href="_fegyver_8h.html">Fegyver.h</a></div></div>
+<div class="ttc" id="a_ital_8h_html"><div class="ttname"><a href="_ital_8h.html">Ital.h</a></div></div>
+<div class="ttc" id="a_jatekos_8h_html_a74b89ea1265b7e7bb4ed38f0ea0f2843"><div class="ttname"><a href="_jatekos_8h.html#a74b89ea1265b7e7bb4ed38f0ea0f2843">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Jatekos &amp;jatekos)</div></div>
+<div class="ttc" id="a_karakter_8h_html"><div class="ttname"><a href="_karakter_8h.html">Karakter.h</a></div></div>
+<div class="ttc" id="aclass_fegyver_html"><div class="ttname"><a href="class_fegyver.html">Fegyver</a></div><div class="ttdef"><b>Definition:</b> Fegyver.h:16</div></div>
+<div class="ttc" id="aclass_ital_html"><div class="ttname"><a href="class_ital.html">Ital</a></div><div class="ttdef"><b>Definition:</b> Ital.h:16</div></div>
+<div class="ttc" id="aclass_jatekos_html"><div class="ttname"><a href="class_jatekos.html">Jatekos</a></div><div class="ttdef"><b>Definition:</b> Jatekos.h:19</div></div>
+<div class="ttc" id="aclass_jatekos_html_a083ba53453a5a9da0aaffa5ed8c7359e"><div class="ttname"><a href="class_jatekos.html#a083ba53453a5a9da0aaffa5ed8c7359e">Jatekos::Jatekos</a></div><div class="ttdeci">Jatekos()</div><div class="ttdoc">Konstruktor beállítja az attribútumokat.</div></div>
+<div class="ttc" id="aclass_jatekos_html_a0968a6d4026be6f699e3cbf151fb5402"><div class="ttname"><a href="class_jatekos.html#a0968a6d4026be6f699e3cbf151fb5402">Jatekos::statFrissites</a></div><div class="ttdeci">void statFrissites()</div><div class="ttdoc">Tulajdonságok alapján attribútumok frissítése.</div></div>
+<div class="ttc" id="aclass_jatekos_html_a1741b13c85fe16464d9ae0fc0ee9e704"><div class="ttname"><a href="class_jatekos.html#a1741b13c85fe16464d9ae0fc0ee9e704">Jatekos::setStatPontok</a></div><div class="ttdeci">void setStatPontok(const int StatPontok)</div><div class="ttdef"><b>Definition:</b> Jatekos.h:92</div></div>
+<div class="ttc" id="aclass_jatekos_html_a18b598e291be38f970bf9a627bc35892"><div class="ttname"><a href="class_jatekos.html#a18b598e291be38f970bf9a627bc35892">Jatekos::addItal</a></div><div class="ttdeci">void addItal(const Ital &amp;ujItal)</div></div>
+<div class="ttc" id="aclass_jatekos_html_a37b497cfa4ae94ee3c43bb3c94e0b7d1"><div class="ttname"><a href="class_jatekos.html#a37b497cfa4ae94ee3c43bb3c94e0b7d1">Jatekos::~Jatekos</a></div><div class="ttdeci">virtual ~Jatekos()</div><div class="ttdoc">Virtuális destruktor.</div></div>
+<div class="ttc" id="aclass_jatekos_html_a3a7cc936534633ee99b204f14f826734"><div class="ttname"><a href="class_jatekos.html#a3a7cc936534633ee99b204f14f826734">Jatekos::getElsodlegesFegyver</a></div><div class="ttdeci">Fegyver * getElsodlegesFegyver() const</div></div>
+<div class="ttc" id="aclass_jatekos_html_a40b5884d7b25bf7b901b0210e7eb4c1f"><div class="ttname"><a href="class_jatekos.html#a40b5884d7b25bf7b901b0210e7eb4c1f">Jatekos::getEleteroSzint</a></div><div class="ttdeci">int getEleteroSzint() const</div><div class="ttdef"><b>Definition:</b> Jatekos.h:77</div></div>
+<div class="ttc" id="aclass_jatekos_html_a49ecf0db03a55c342ee321e49f7620c2"><div class="ttname"><a href="class_jatekos.html#a49ecf0db03a55c342ee321e49f7620c2">Jatekos::szintLepes</a></div><div class="ttdeci">void szintLepes()</div><div class="ttdoc">Szint növelése.</div></div>
+<div class="ttc" id="aclass_jatekos_html_a4c76ac5a67e21f42c3db52065b971e81"><div class="ttname"><a href="class_jatekos.html#a4c76ac5a67e21f42c3db52065b971e81">Jatekos::italokKilistazasa</a></div><div class="ttdeci">void italokKilistazasa()</div><div class="ttdoc">Játékosnál található italok kilistázása.</div></div>
+<div class="ttc" id="aclass_jatekos_html_a4d237b6b6a600c2f0e13d7c8f1b5bcc8"><div class="ttname"><a href="class_jatekos.html#a4d237b6b6a600c2f0e13d7c8f1b5bcc8">Jatekos::removeItal</a></div><div class="ttdeci">void removeItal(const int index)</div></div>
+<div class="ttc" id="aclass_jatekos_html_a562c1bc0b67f6919915d09576f84da79"><div class="ttname"><a href="class_jatekos.html#a562c1bc0b67f6919915d09576f84da79">Jatekos::eladItal</a></div><div class="ttdeci">void eladItal(const int index)</div></div>
+<div class="ttc" id="aclass_jatekos_html_a5cd659013bb9ef1e55b9d92bbd8bd48a"><div class="ttname"><a href="class_jatekos.html#a5cd659013bb9ef1e55b9d92bbd8bd48a">Jatekos::tamadas</a></div><div class="ttdeci">void tamadas(Karakter &amp;kit)</div></div>
+<div class="ttc" id="aclass_jatekos_html_a6fe33b61c31f49434abad46e65882e75"><div class="ttname"><a href="class_jatekos.html#a6fe33b61c31f49434abad46e65882e75">Jatekos::stathozAdas</a></div><div class="ttdeci">void stathozAdas(const int stat, const int value)</div></div>
+<div class="ttc" id="aclass_jatekos_html_a7e679666ac7a2fa02e402cc354f96fb1"><div class="ttname"><a href="class_jatekos.html#a7e679666ac7a2fa02e402cc354f96fb1">Jatekos::initJatekos</a></div><div class="ttdeci">void initJatekos(const std::string Nev)</div></div>
+<div class="ttc" id="aclass_jatekos_html_a7f3d7152cff5baaadad4597044d5c8d5"><div class="ttname"><a href="class_jatekos.html#a7f3d7152cff5baaadad4597044d5c8d5">Jatekos::setEro</a></div><div class="ttdeci">void setEro(const int Ero)</div><div class="ttdef"><b>Definition:</b> Jatekos.h:73</div></div>
+<div class="ttc" id="aclass_jatekos_html_a89b8a070b432e9db5cecbfc57001cc13"><div class="ttname"><a href="class_jatekos.html#a89b8a070b432e9db5cecbfc57001cc13">Jatekos::getSzint</a></div><div class="ttdeci">int getSzint() const</div><div class="ttdef"><b>Definition:</b> Jatekos.h:53</div></div>
+<div class="ttc" id="aclass_jatekos_html_a975da493f0640d9b25ee61901bed9b6f"><div class="ttname"><a href="class_jatekos.html#a975da493f0640d9b25ee61901bed9b6f">Jatekos::setEleteroSzint</a></div><div class="ttdeci">void setEleteroSzint(const int EleteroSzint)</div><div class="ttdef"><b>Definition:</b> Jatekos.h:81</div></div>
+<div class="ttc" id="aclass_jatekos_html_a9edefd41b4f9d3ff23be4a29bcb4aafa"><div class="ttname"><a href="class_jatekos.html#a9edefd41b4f9d3ff23be4a29bcb4aafa">Jatekos::italokSzama</a></div><div class="ttdeci">int italokSzama()</div><div class="ttdef"><b>Definition:</b> Jatekos.h:127</div></div>
+<div class="ttc" id="aclass_jatekos_html_aa304ba725101833efb73bb4231f61e5d"><div class="ttname"><a href="class_jatekos.html#aa304ba725101833efb73bb4231f61e5d">Jatekos::setMaxEletero</a></div><div class="ttdeci">void setMaxEletero(const int MaxEletero)</div><div class="ttdef"><b>Definition:</b> Jatekos.h:49</div></div>
+<div class="ttc" id="aclass_jatekos_html_abb381eea95243e49e66ff17e40fcb375"><div class="ttname"><a href="class_jatekos.html#abb381eea95243e49e66ff17e40fcb375">Jatekos::getStatPontok</a></div><div class="ttdeci">int getStatPontok() const</div><div class="ttdef"><b>Definition:</b> Jatekos.h:88</div></div>
+<div class="ttc" id="aclass_jatekos_html_ac148d84c4cfdcf9c45348a33bb028639"><div class="ttname"><a href="class_jatekos.html#ac148d84c4cfdcf9c45348a33bb028639">Jatekos::maxElet</a></div><div class="ttdeci">void maxElet()</div><div class="ttdoc">Maximális élet beállítása.</div><div class="ttdef"><b>Definition:</b> Jatekos.h:84</div></div>
+<div class="ttc" id="aclass_jatekos_html_ac397d60f2fa8d0043bf1f0a701765ecd"><div class="ttname"><a href="class_jatekos.html#ac397d60f2fa8d0043bf1f0a701765ecd">Jatekos::getEro</a></div><div class="ttdeci">int getEro() const</div><div class="ttdef"><b>Definition:</b> Jatekos.h:69</div></div>
+<div class="ttc" id="aclass_jatekos_html_ac45ca0af588759dc6eaa6c6e28526132"><div class="ttname"><a href="class_jatekos.html#ac45ca0af588759dc6eaa6c6e28526132">Jatekos::getMaxEletero</a></div><div class="ttdeci">int getMaxEletero() const</div><div class="ttdef"><b>Definition:</b> Jatekos.h:45</div></div>
+<div class="ttc" id="aclass_jatekos_html_ac59a7f9875453d7ebf67a273c5880b13"><div class="ttname"><a href="class_jatekos.html#ac59a7f9875453d7ebf67a273c5880b13">Jatekos::setKovetkezoSzint</a></div><div class="ttdeci">void setKovetkezoSzint(const int KovetkezoSzint)</div><div class="ttdef"><b>Definition:</b> Jatekos.h:65</div></div>
+<div class="ttc" id="aclass_jatekos_html_ac7197c2e414149707ca1ae099f5b9c2b"><div class="ttname"><a href="class_jatekos.html#ac7197c2e414149707ca1ae099f5b9c2b">Jatekos::setElsodlegesFegyver</a></div><div class="ttdeci">void setElsodlegesFegyver(const Fegyver &amp;ujFegyver)</div></div>
+<div class="ttc" id="aclass_jatekos_html_aceeda820c6c946553a24293878a01e73"><div class="ttname"><a href="class_jatekos.html#aceeda820c6c946553a24293878a01e73">Jatekos::getKovetkezoSzint</a></div><div class="ttdeci">int getKovetkezoSzint() const</div><div class="ttdef"><b>Definition:</b> Jatekos.h:61</div></div>
+<div class="ttc" id="aclass_jatekos_html_acfe520deb4bb5ee882fe0cb1e926eaaa"><div class="ttname"><a href="class_jatekos.html#acfe520deb4bb5ee882fe0cb1e926eaaa">Jatekos::setSzint</a></div><div class="ttdeci">void setSzint(const int Szint)</div><div class="ttdef"><b>Definition:</b> Jatekos.h:57</div></div>
+<div class="ttc" id="aclass_jatekos_html_aec4dd05acc5241e013fd0face5123729"><div class="ttname"><a href="class_jatekos.html#aec4dd05acc5241e013fd0face5123729">Jatekos::getItal</a></div><div class="ttdeci">Ital * getItal(const int index) const</div></div>
+<div class="ttc" id="aclass_jatekos_html_af32265941449886400e9c784f154ab54"><div class="ttname"><a href="class_jatekos.html#af32265941449886400e9c784f154ab54">Jatekos::addEletero</a></div><div class="ttdeci">void addEletero(const int mennyit)</div></div>
+<div class="ttc" id="aclass_karakter_html"><div class="ttname"><a href="class_karakter.html">Karakter</a></div><div class="ttdef"><b>Definition:</b> Karakter.h:15</div></div>
+<div class="ttc" id="aclass_karakter_html_a48f8bcdf00f6d1e272716aeb51e714f4"><div class="ttname"><a href="class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4">Karakter::setEletero</a></div><div class="ttdeci">void setEletero(const int Eletero)</div><div class="ttdef"><b>Definition:</b> Karakter.h:53</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_jatekos_8h.html">Jatekos.h</a></li>
+    <li class="footer">Készítette <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

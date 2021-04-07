@@ -1,0 +1,125 @@
+\hypertarget{class_ital}{}\doxysection{Ital osztályreferencia}
+\label{class_ital}\index{Ital@{Ital}}
+
+
+{\ttfamily \#include $<$Ital.\+h$>$}
+
+Az Ital osztály származási diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ital}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ital_ad017a5b24ff3d4587f53145f97c4daef}\label{class_ital_ad017a5b24ff3d4587f53145f97c4daef}} 
+\mbox{\hyperlink{class_ital_ad017a5b24ff3d4587f53145f97c4daef}{Ital}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor beállítja az attribútumokat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ital_a4b217b45502570878f7b3dcc0736dd2d}{Ital}} (std\+::string Nev, int Veteli\+Ar, int Eladasi\+Ar, int Tamadas\+Plusz, int Eletero\+Plusz)
+\item 
+\mbox{\Hypertarget{class_ital_a6377e95d7a9819a4588683892b83bfef}\label{class_ital_a6377e95d7a9819a4588683892b83bfef}} 
+virtual \mbox{\hyperlink{class_ital_a6377e95d7a9819a4588683892b83bfef}{$\sim$\+Ital}} ()
+\begin{DoxyCompactList}\small\item\em Virtuális destruktor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ital_a81608772d221d25cc7cccd812e7ff095}{get\+Eletero\+Plusz}} () const
+\item 
+void \mbox{\hyperlink{class_ital_a2924e5616679fec7c1cb4c780fb94fa1}{set\+Eletero\+Plusz}} (int Eletero\+Plusz)
+\item 
+\mbox{\hyperlink{class_ital}{Ital}} $\ast$ \mbox{\hyperlink{class_ital_a6319617d9a8d9e90f74b7d62dfe4dc4e}{clone}} () const
+\item 
+void \mbox{\hyperlink{class_ital_a89b33a19b9aaea16da768e68382fe696}{hasznal}} (\mbox{\hyperlink{class_jatekos}{Jatekos}} \&jatekos)
+\item 
+void \mbox{\hyperlink{class_ital_a887ab129f95db13e5a53e0d8be90215d}{vasarol}} (\mbox{\hyperlink{class_jatekos}{Jatekos}} \&jatekos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+\mbox{\hyperlink{class_ital}{Ital}} osztály 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_ital_a4b217b45502570878f7b3dcc0736dd2d}\label{class_ital_a4b217b45502570878f7b3dcc0736dd2d}} 
+\index{Ital@{Ital}!Ital@{Ital}}
+\index{Ital@{Ital}!Ital@{Ital}}
+\doxysubsubsection{\texorpdfstring{Ital()}{Ital()}}
+{\footnotesize\ttfamily Ital\+::\+Ital (\begin{DoxyParamCaption}\item[{std\+::string}]{Nev,  }\item[{int}]{Veteli\+Ar,  }\item[{int}]{Eladasi\+Ar,  }\item[{int}]{Tamadas\+Plusz,  }\item[{int}]{Eletero\+Plusz }\end{DoxyParamCaption})}
+
+Több paraméteres konstruktor 
+\begin{DoxyParams}{Paraméterek}
+{\em Nev} & -\/ Az ital neve \\
+\hline
+{\em Veteli\+Ar} & -\/ Az ital vételi ára \\
+\hline
+{\em Eladasi\+Ar} & -\/ Az ital eladási ára \\
+\hline
+{\em Tamadas\+Plusz} & -\/ Az ital által okozott plusz sebzés \\
+\hline
+{\em Eletero\+Plusz} & -\/ Az ital által feltöltött életerő \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_ital_a6319617d9a8d9e90f74b7d62dfe4dc4e}\label{class_ital_a6319617d9a8d9e90f74b7d62dfe4dc4e}} 
+\index{Ital@{Ital}!clone@{clone}}
+\index{clone@{clone}!Ital@{Ital}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ital}{Ital}}$\ast$ Ital\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\hyperlink{class_ital}{Ital}} klónozása \begin{DoxyReturn}{Visszatérési érték}
+-\/ Az ital másolatára mutató pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ital_a81608772d221d25cc7cccd812e7ff095}\label{class_ital_a81608772d221d25cc7cccd812e7ff095}} 
+\index{Ital@{Ital}!getEleteroPlusz@{getEleteroPlusz}}
+\index{getEleteroPlusz@{getEleteroPlusz}!Ital@{Ital}}
+\doxysubsubsection{\texorpdfstring{getEleteroPlusz()}{getEleteroPlusz()}}
+{\footnotesize\ttfamily int Ital\+::get\+Eletero\+Plusz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{class_ital}{Ital}} által feltöltött életerő lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ ital által feltöltött életerő 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ital_a89b33a19b9aaea16da768e68382fe696}\label{class_ital_a89b33a19b9aaea16da768e68382fe696}} 
+\index{Ital@{Ital}!hasznal@{hasznal}}
+\index{hasznal@{hasznal}!Ital@{Ital}}
+\doxysubsubsection{\texorpdfstring{hasznal()}{hasznal()}}
+{\footnotesize\ttfamily void Ital\+::hasznal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jatekos}{Jatekos}} \&}]{jatekos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\hyperlink{class_ital}{Ital}} használata 
+\begin{DoxyParams}{Paraméterek}
+{\em jatekos} & -\/ A használó játékos referenciája \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_targy_a2e05288d00fe9764a3097b7bac02a7ad}{Targy}}.
+
+\mbox{\Hypertarget{class_ital_a2924e5616679fec7c1cb4c780fb94fa1}\label{class_ital_a2924e5616679fec7c1cb4c780fb94fa1}} 
+\index{Ital@{Ital}!setEleteroPlusz@{setEleteroPlusz}}
+\index{setEleteroPlusz@{setEleteroPlusz}!Ital@{Ital}}
+\doxysubsubsection{\texorpdfstring{setEleteroPlusz()}{setEleteroPlusz()}}
+{\footnotesize\ttfamily void Ital\+::set\+Eletero\+Plusz (\begin{DoxyParamCaption}\item[{int}]{Eletero\+Plusz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{class_ital}{Ital}} által feltöltött életerő beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Eletero\+Plusz} & -\/ \mbox{\hyperlink{class_ital}{Ital}} által feltöltött életerő \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ital_a887ab129f95db13e5a53e0d8be90215d}\label{class_ital_a887ab129f95db13e5a53e0d8be90215d}} 
+\index{Ital@{Ital}!vasarol@{vasarol}}
+\index{vasarol@{vasarol}!Ital@{Ital}}
+\doxysubsubsection{\texorpdfstring{vasarol()}{vasarol()}}
+{\footnotesize\ttfamily void Ital\+::vasarol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jatekos}{Jatekos}} \&}]{jatekos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\hyperlink{class_ital}{Ital}} megvásárlása 
+\begin{DoxyParams}{Paraméterek}
+{\em jatekos} & -\/ A használó játékos referenciája \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_targy_a9fc9546e7e68864ac3760d960763fba4}{Targy}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_ital_8h}{Ital.\+h}}\end{DoxyCompactItemize}

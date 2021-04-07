@@ -1,5 +1,0 @@
-4
-Whiskey 6 4 0 40
-Vodka 10 7 0 100
-Sor 3 2 0 10
-Cola 5 3 0 20

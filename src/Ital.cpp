@@ -23,8 +23,6 @@ std::ostream& operator<<(std::ostream& out,const Ital& ital)
 void Ital::hasznal(Jatekos& jatekos)
 {
     jatekos.addEletero(eleteroPlusz);
-    if(jatekos.getEletero() > jatekos.getMaxEletero())
-        jatekos.maxElet();
     std::cout<<"Az eleterod megnovelve!\nAz uj eleterod: "<<jatekos.getEletero()<<std::endl;
 }
 

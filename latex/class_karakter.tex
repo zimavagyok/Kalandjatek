@@ -1,0 +1,319 @@
+\hypertarget{class_karakter}{}\doxysection{Karakter osztályreferencia}
+\label{class_karakter}\index{Karakter@{Karakter}}
+
+
+{\ttfamily \#include $<$Karakter.\+h$>$}
+
+A Karakter osztály származási diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_karakter}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_karakter_a94341941130398d1f6509d6da6481db8}\label{class_karakter_a94341941130398d1f6509d6da6481db8}} 
+\mbox{\hyperlink{class_karakter_a94341941130398d1f6509d6da6481db8}{Karakter}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor beállítja az attribútumokat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_karakter_a89329b98b2914a2bdae5ff3c06680a8e}{Karakter}} (std\+::string Nev, int Eletero, int Tapasztalat, int Arany, int Min\+Sebzes, int Max\+Sebzes, int Vedekezes)
+\item 
+\mbox{\Hypertarget{class_karakter_ab343869c03a0998e95caae946cd8c31d}\label{class_karakter_ab343869c03a0998e95caae946cd8c31d}} 
+virtual \mbox{\hyperlink{class_karakter_ab343869c03a0998e95caae946cd8c31d}{$\sim$\+Karakter}} ()
+\begin{DoxyCompactList}\small\item\em Virtuális destruktor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_karakter_adb5842f886870a09d8a389d17e3ebaac}{get\+Nev}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_ac3f695d616421f4dd0bc423d1f4e0403}{set\+Nev}} (const std\+::string Nev)
+\item 
+int \mbox{\hyperlink{class_karakter_a9396e2d58d2400555507b13d65a1b204}{get\+Eletero}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_a48f8bcdf00f6d1e272716aeb51e714f4}{set\+Eletero}} (const int Eletero)
+\item 
+int \mbox{\hyperlink{class_karakter_a984fdd8baab6eef98058678fe0392ea7}{get\+Tapasztalat}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_aca0930b22657eb4613ebb4c219797486}{set\+Tapasztalat}} (const int Tapasztalat)
+\item 
+int \mbox{\hyperlink{class_karakter_a17dd5b1790eb7d10e4fe8af7fd95b5a4}{get\+Arany}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_a8f85cb158fd30773e0b36bec8ab7fbaf}{set\+Arany}} (const int Arany)
+\item 
+void \mbox{\hyperlink{class_karakter_a70e7dda9eef9a4b6a015f4cb6b3e5660}{levon\+Arany}} (const int Arany)
+\item 
+int \mbox{\hyperlink{class_karakter_a2767bdd2821c845a4d5dfffb8cfb6c3d}{get\+Min\+Sebzes}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_aea9b600d2251f44edf08e132f1b377cd}{set\+Min\+Sebzes}} (const int Min\+Sebzes)
+\item 
+int \mbox{\hyperlink{class_karakter_ac39eb2e9edfd2356ff7b607a2dec2bdb}{get\+Max\+Sebzes}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_a4a86ffa9fc45bac6f4d53dbf8be54258}{set\+Max\+Sebzes}} (const int Max\+Sebzes)
+\item 
+int \mbox{\hyperlink{class_karakter_a213a82667019b74a94a10dbed9c8bfa1}{get\+Vedekezes}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_a721ce4cfe20efa982e262b359d477938}{set\+Vedekezes}} (const int Vedekezes)
+\item 
+int \mbox{\hyperlink{class_karakter_a9597ce1a1d8cd793e132c94061975ed8}{get\+Sebzes}} () const
+\item 
+void \mbox{\hyperlink{class_karakter_a4f9b6e6938300b6d988d2d8d802e3354}{add\+Arany}} (const int mennyit)
+\item 
+void \mbox{\hyperlink{class_karakter_a0fdfa210ccc3ee1729998817d840c268}{add\+Tp}} (const int mennyit)
+\item 
+virtual void \mbox{\hyperlink{class_karakter_a71775437b7dd5e85e25a216bc6fd798b}{tamadas}} (\mbox{\hyperlink{class_karakter}{Karakter}} \&kit)=0
+\item 
+void \mbox{\hyperlink{class_karakter_a2fcd7208aefc2ad5be834299c920b669}{take\+Sebzes}} (const int Sebzes)
+\item 
+bool \mbox{\hyperlink{class_karakter_a6acbf6fbf5b8f2e81e02e00efff181ed}{eletben}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+\mbox{\hyperlink{class_karakter}{Karakter}} osztály 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_karakter_a89329b98b2914a2bdae5ff3c06680a8e}\label{class_karakter_a89329b98b2914a2bdae5ff3c06680a8e}} 
+\index{Karakter@{Karakter}!Karakter@{Karakter}}
+\index{Karakter@{Karakter}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{Karakter()}{Karakter()}}
+{\footnotesize\ttfamily Karakter\+::\+Karakter (\begin{DoxyParamCaption}\item[{std\+::string}]{Nev,  }\item[{int}]{Eletero,  }\item[{int}]{Tapasztalat,  }\item[{int}]{Arany,  }\item[{int}]{Min\+Sebzes,  }\item[{int}]{Max\+Sebzes,  }\item[{int}]{Vedekezes }\end{DoxyParamCaption})}
+
+Több paraméteres konstruktor 
+\begin{DoxyParams}{Paraméterek}
+{\em Nev} & -\/ Név \\
+\hline
+{\em Eletero} & -\/ Életerő \\
+\hline
+{\em Tapasztalat} & -\/ Tapasztalat \\
+\hline
+{\em Arany} & -\/ Arany \\
+\hline
+{\em Min\+Sebzes} & -\/ Minimális sebzés \\
+\hline
+{\em Max\+Sebzes} & -\/ Maximális sebzés \\
+\hline
+{\em Vedekezes} & -\/ Védekezés \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_karakter_a4f9b6e6938300b6d988d2d8d802e3354}\label{class_karakter_a4f9b6e6938300b6d988d2d8d802e3354}} 
+\index{Karakter@{Karakter}!addArany@{addArany}}
+\index{addArany@{addArany}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{addArany()}{addArany()}}
+{\footnotesize\ttfamily void Karakter\+::add\+Arany (\begin{DoxyParamCaption}\item[{const int}]{mennyit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Arany hozzáadása a karakter aranyához 
+\begin{DoxyParams}{Paraméterek}
+{\em mennyit} & -\/ Hozzáadandó arany \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a0fdfa210ccc3ee1729998817d840c268}\label{class_karakter_a0fdfa210ccc3ee1729998817d840c268}} 
+\index{Karakter@{Karakter}!addTp@{addTp}}
+\index{addTp@{addTp}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{addTp()}{addTp()}}
+{\footnotesize\ttfamily void Karakter\+::add\+Tp (\begin{DoxyParamCaption}\item[{const int}]{mennyit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tapasztalat hozzáadása a karakter tapasztalatához 
+\begin{DoxyParams}{Paraméterek}
+{\em mennyit} & -\/ Hozzáadandó tapasztalat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a6acbf6fbf5b8f2e81e02e00efff181ed}\label{class_karakter_a6acbf6fbf5b8f2e81e02e00efff181ed}} 
+\index{Karakter@{Karakter}!eletben@{eletben}}
+\index{eletben@{eletben}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{eletben()}{eletben()}}
+{\footnotesize\ttfamily bool Karakter\+::eletben (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{class_karakter}{Karakter}} életben van-\/e lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Életben van-\/e 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a17dd5b1790eb7d10e4fe8af7fd95b5a4}\label{class_karakter_a17dd5b1790eb7d10e4fe8af7fd95b5a4}} 
+\index{Karakter@{Karakter}!getArany@{getArany}}
+\index{getArany@{getArany}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getArany()}{getArany()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Arany (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Arany lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Arany 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a9396e2d58d2400555507b13d65a1b204}\label{class_karakter_a9396e2d58d2400555507b13d65a1b204}} 
+\index{Karakter@{Karakter}!getEletero@{getEletero}}
+\index{getEletero@{getEletero}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getEletero()}{getEletero()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Eletero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Életerő lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Életerő 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_ac39eb2e9edfd2356ff7b607a2dec2bdb}\label{class_karakter_ac39eb2e9edfd2356ff7b607a2dec2bdb}} 
+\index{Karakter@{Karakter}!getMaxSebzes@{getMaxSebzes}}
+\index{getMaxSebzes@{getMaxSebzes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getMaxSebzes()}{getMaxSebzes()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Max\+Sebzes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Maximális sebzés lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Maximális sebzés 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a2767bdd2821c845a4d5dfffb8cfb6c3d}\label{class_karakter_a2767bdd2821c845a4d5dfffb8cfb6c3d}} 
+\index{Karakter@{Karakter}!getMinSebzes@{getMinSebzes}}
+\index{getMinSebzes@{getMinSebzes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getMinSebzes()}{getMinSebzes()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Min\+Sebzes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Minimális sebzés lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Minimális sebzés 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_adb5842f886870a09d8a389d17e3ebaac}\label{class_karakter_adb5842f886870a09d8a389d17e3ebaac}} 
+\index{Karakter@{Karakter}!getNev@{getNev}}
+\index{getNev@{getNev}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getNev()}{getNev()}}
+{\footnotesize\ttfamily std\+::string Karakter\+::get\+Nev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Név lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Név 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a9597ce1a1d8cd793e132c94061975ed8}\label{class_karakter_a9597ce1a1d8cd793e132c94061975ed8}} 
+\index{Karakter@{Karakter}!getSebzes@{getSebzes}}
+\index{getSebzes@{getSebzes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getSebzes()}{getSebzes()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Sebzes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sebzés lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Sebzés 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a984fdd8baab6eef98058678fe0392ea7}\label{class_karakter_a984fdd8baab6eef98058678fe0392ea7}} 
+\index{Karakter@{Karakter}!getTapasztalat@{getTapasztalat}}
+\index{getTapasztalat@{getTapasztalat}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getTapasztalat()}{getTapasztalat()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Tapasztalat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tapasztalat lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Tapasztalat 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a213a82667019b74a94a10dbed9c8bfa1}\label{class_karakter_a213a82667019b74a94a10dbed9c8bfa1}} 
+\index{Karakter@{Karakter}!getVedekezes@{getVedekezes}}
+\index{getVedekezes@{getVedekezes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{getVedekezes()}{getVedekezes()}}
+{\footnotesize\ttfamily int Karakter\+::get\+Vedekezes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Védekezés lekérdezése \begin{DoxyReturn}{Visszatérési érték}
+-\/ Védekezés 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_karakter_a70e7dda9eef9a4b6a015f4cb6b3e5660}\label{class_karakter_a70e7dda9eef9a4b6a015f4cb6b3e5660}} 
+\index{Karakter@{Karakter}!levonArany@{levonArany}}
+\index{levonArany@{levonArany}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{levonArany()}{levonArany()}}
+{\footnotesize\ttfamily void Karakter\+::levon\+Arany (\begin{DoxyParamCaption}\item[{const int}]{Arany }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Arany levonása 
+\begin{DoxyParams}{Paraméterek}
+{\em Arany} & -\/ Levonandó arany \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a8f85cb158fd30773e0b36bec8ab7fbaf}\label{class_karakter_a8f85cb158fd30773e0b36bec8ab7fbaf}} 
+\index{Karakter@{Karakter}!setArany@{setArany}}
+\index{setArany@{setArany}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setArany()}{setArany()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Arany (\begin{DoxyParamCaption}\item[{const int}]{Arany }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Arany beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Arany} & -\/ Arany \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a48f8bcdf00f6d1e272716aeb51e714f4}\label{class_karakter_a48f8bcdf00f6d1e272716aeb51e714f4}} 
+\index{Karakter@{Karakter}!setEletero@{setEletero}}
+\index{setEletero@{setEletero}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setEletero()}{setEletero()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Eletero (\begin{DoxyParamCaption}\item[{const int}]{Eletero }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Életerő beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Eletero} & -\/ Életerő \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a4a86ffa9fc45bac6f4d53dbf8be54258}\label{class_karakter_a4a86ffa9fc45bac6f4d53dbf8be54258}} 
+\index{Karakter@{Karakter}!setMaxSebzes@{setMaxSebzes}}
+\index{setMaxSebzes@{setMaxSebzes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setMaxSebzes()}{setMaxSebzes()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Max\+Sebzes (\begin{DoxyParamCaption}\item[{const int}]{Max\+Sebzes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Maximális sebzés beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Max\+Sebzes} & -\/ Maximális sebzés \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_aea9b600d2251f44edf08e132f1b377cd}\label{class_karakter_aea9b600d2251f44edf08e132f1b377cd}} 
+\index{Karakter@{Karakter}!setMinSebzes@{setMinSebzes}}
+\index{setMinSebzes@{setMinSebzes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setMinSebzes()}{setMinSebzes()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Min\+Sebzes (\begin{DoxyParamCaption}\item[{const int}]{Min\+Sebzes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Minimális sebzés beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Min\+Sebzes} & -\/ Minimális sebzés \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_ac3f695d616421f4dd0bc423d1f4e0403}\label{class_karakter_ac3f695d616421f4dd0bc423d1f4e0403}} 
+\index{Karakter@{Karakter}!setNev@{setNev}}
+\index{setNev@{setNev}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setNev()}{setNev()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Nev (\begin{DoxyParamCaption}\item[{const std\+::string}]{Nev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Név beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Nev-\/} & Név \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_aca0930b22657eb4613ebb4c219797486}\label{class_karakter_aca0930b22657eb4613ebb4c219797486}} 
+\index{Karakter@{Karakter}!setTapasztalat@{setTapasztalat}}
+\index{setTapasztalat@{setTapasztalat}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setTapasztalat()}{setTapasztalat()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Tapasztalat (\begin{DoxyParamCaption}\item[{const int}]{Tapasztalat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tapasztalat beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Tapasztalat} & -\/ Tapasztalat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a721ce4cfe20efa982e262b359d477938}\label{class_karakter_a721ce4cfe20efa982e262b359d477938}} 
+\index{Karakter@{Karakter}!setVedekezes@{setVedekezes}}
+\index{setVedekezes@{setVedekezes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{setVedekezes()}{setVedekezes()}}
+{\footnotesize\ttfamily void Karakter\+::set\+Vedekezes (\begin{DoxyParamCaption}\item[{const int}]{Vedekezes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Védekezés beállítása 
+\begin{DoxyParams}{Paraméterek}
+{\em Vedekezes} & -\/ Védekezés \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a2fcd7208aefc2ad5be834299c920b669}\label{class_karakter_a2fcd7208aefc2ad5be834299c920b669}} 
+\index{Karakter@{Karakter}!takeSebzes@{takeSebzes}}
+\index{takeSebzes@{takeSebzes}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{takeSebzes()}{takeSebzes()}}
+{\footnotesize\ttfamily void Karakter\+::take\+Sebzes (\begin{DoxyParamCaption}\item[{const int}]{Sebzes }\end{DoxyParamCaption})}
+
+Sebzés levonása 
+\begin{DoxyParams}{Paraméterek}
+{\em Sebzes} & -\/ Levonandó sebzés \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_karakter_a71775437b7dd5e85e25a216bc6fd798b}\label{class_karakter_a71775437b7dd5e85e25a216bc6fd798b}} 
+\index{Karakter@{Karakter}!tamadas@{tamadas}}
+\index{tamadas@{tamadas}!Karakter@{Karakter}}
+\doxysubsubsection{\texorpdfstring{tamadas()}{tamadas()}}
+{\footnotesize\ttfamily virtual void Karakter\+::tamadas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_karakter}{Karakter}} \&}]{kit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Tisztán virtuális támadás függvény 
+\begin{DoxyParams}{Paraméterek}
+{\em kit} & -\/ \mbox{\hyperlink{class_karakter}{Karakter}} referencia \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítják a következők\+: \mbox{\hyperlink{class_jatekos_a5cd659013bb9ef1e55b9d92bbd8bd48a}{Jatekos}} és \mbox{\hyperlink{class_ellenseg_a7385b8e5a64188103fe333fb4f59cf77}{Ellenseg}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_karakter_8h}{Karakter.\+h}}\end{DoxyCompactItemize}

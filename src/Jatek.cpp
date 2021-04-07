@@ -65,16 +65,18 @@ void Jatek::initJatek()
 void Jatek::foMenu()
 {
     std::cout<<"Udvozollek a jatekban! Valassz a kovetkezo menupontok kozul!\n";
-    std::cout <<"1. Kilepes\n2. Jatek inditasa\n";
+    std::cout <<"1. Jatek inditasa\n2. Kilepes\n";
     std::cout<<"Valasztasod: ";
     std::cin >> valasztas;
     while(valasztas<1 || valasztas > 2)
     {
         std::cout<<"Hibas valasztas!\n";
+        std::cin.clear();
+        std::cin.ignore(100, '\n');
         std::cout<<"Valasztasod: ";
         std::cin >> valasztas;
     }
-    if(valasztas==1)
+    if(valasztas==2)
     {
         jatekFut = false;
         std::cout<<"A viszont latasra!\n";
@@ -108,6 +110,13 @@ void Jatek::ujJatekosKeszitese()
     std::cout<<"Hozz letre egy uj jatekost!\nNev:";
     std::string nev;
     std::cin >> nev;
+    while(nev=="")
+    {
+        std::cout<<"Helytelen nev valasztas!\n";
+        std::cin.clear();
+        std::cout<<"Nev: ";
+        std::cin >> nev;
+    }
     jatekos = new Jatekos();
     jatekos->initJatekos(nev);
 }
@@ -127,6 +136,8 @@ void Jatek::jatekMenu()
         while(std::cin.fail() || valasztas<0 || valasztas>4)
         {
             std::cout<<"Hibas valasztas!\n";
+            std::cin.clear();
+			std::cin.ignore(100, '\n');
             std::cout<<"Valasztas: ";
             std::cin >> valasztas;
         }
@@ -154,7 +165,7 @@ void Jatek::jatekMenu()
     }
     if(!jatekos->eletben())
     {
-        std::cout<<"LEGYOZTEK!\n";
+        std::cout<<"\n\n!!!A JATEKNAK VEGE!!!\n";
         jatekFut = false;
     }
 }
@@ -192,6 +203,8 @@ void Jatek::pihenes()
         while(std::cin.fail() || pihenesValasztas<1 || pihenesValasztas>2)
         {
             std::cout<<"Hibas valasztas!\n";
+            std::cin.clear();
+			std::cin.ignore(100, '\n');
             std::cout<<"Valasztas: ";
             std::cin >> pihenesValasztas;
         }
@@ -224,7 +237,10 @@ void Jatek::karakterSzintlepes()
         std::cin >> statValasztas;
         while(std::cin.fail() || statValasztas<0 || statValasztas>2)
         {
-            std::cout<<"Hibas valasztas!\nValasztas: ";
+            std::cout<<"Hibas valasztas!\n";
+            std::cin.clear();
+			std::cin.ignore(100, '\n');
+			std::cout<<"Valasztas: ";
             std::cin>>statValasztas;
         }
         if(statValasztas==0)
@@ -252,6 +268,8 @@ void Jatek::karakterMenu()
     while(std::cin.fail() || invValasztas<0 || invValasztas>3)
     {
         std::cout<<"Hibas valasztas!\n";
+        std::cin.clear();
+        std::cin.ignore(100, '\n');
         std::cout<<"Valasztas: ";
         std::cin>>invValasztas;
     }

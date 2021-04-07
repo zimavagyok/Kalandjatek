@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['setarany_237',['setArany',['../class_karakter.html#a8f85cb158fd30773e0b36bec8ab7fbaf',1,'Karakter']]],
+  ['seteladasiar_238',['setEladasiAr',['../class_targy.html#aaca69f36f3cd90adab361c812161949e',1,'Targy']]],
+  ['seteletero_239',['setEletero',['../class_karakter.html#a48f8bcdf00f6d1e272716aeb51e714f4',1,'Karakter']]],
+  ['seteleteroplusz_240',['setEleteroPlusz',['../class_ital.html#a2924e5616679fec7c1cb4c780fb94fa1',1,'Ital']]],
+  ['seteleteroszint_241',['setEleteroSzint',['../class_jatekos.html#a975da493f0640d9b25ee61901bed9b6f',1,'Jatekos']]],
+  ['setelsodlegesfegyver_242',['setElsodlegesFegyver',['../class_jatekos.html#ac7197c2e414149707ca1ae099f5b9c2b',1,'Jatekos']]],
+  ['setero_243',['setEro',['../class_jatekos.html#a7f3d7152cff5baaadad4597044d5c8d5',1,'Jatekos']]],
+  ['setkovetkezoszint_244',['setKovetkezoSzint',['../class_jatekos.html#ac59a7f9875453d7ebf67a273c5880b13',1,'Jatekos']]],
+  ['setkritikussebzes_245',['setKritikusSebzes',['../class_fegyver.html#a6a22fc5f23b589557c04cced6fda8ae5',1,'Fegyver']]],
+  ['setmaxeletero_246',['setMaxEletero',['../class_jatekos.html#aa304ba725101833efb73bb4231f61e5d',1,'Jatekos']]],
+  ['setmaxsebzes_247',['setMaxSebzes',['../class_karakter.html#a4a86ffa9fc45bac6f4d53dbf8be54258',1,'Karakter']]],
+  ['setmaxtamadasszorzo_248',['setMaxTamadasSzorzo',['../class_ellenseg.html#a4672b3b82e1e78e236c271def0e00c60',1,'Ellenseg']]],
+  ['setminsebzes_249',['setMinSebzes',['../class_karakter.html#aea9b600d2251f44edf08e132f1b377cd',1,'Karakter']]],
+  ['setnev_250',['setNev',['../class_karakter.html#ac3f695d616421f4dd0bc423d1f4e0403',1,'Karakter::setNev()'],['../class_targy.html#ae8963e360178341c6a7d0659448b0fcf',1,'Targy::setNev()']]],
+  ['setstatpontok_251',['setStatPontok',['../class_jatekos.html#a1741b13c85fe16464d9ae0fc0ee9e704',1,'Jatekos']]],
+  ['setszint_252',['setSzint',['../class_jatekos.html#acfe520deb4bb5ee882fe0cb1e926eaaa',1,'Jatekos']]],
+  ['settamadasplusz_253',['setTamadasPlusz',['../class_targy.html#a9fc4bccb0a954d3a820a5ebe39b4058f',1,'Targy']]],
+  ['settapasztalat_254',['setTapasztalat',['../class_karakter.html#aca0930b22657eb4613ebb4c219797486',1,'Karakter']]],
+  ['setvedekezes_255',['setVedekezes',['../class_karakter.html#a721ce4cfe20efa982e262b359d477938',1,'Karakter']]],
+  ['setveteliar_256',['setVeteliAr',['../class_targy.html#a4e09a37b049bf5292f9a7479d0f8c90d',1,'Targy']]],
+  ['statfrissites_257',['statFrissites',['../class_jatekos.html#a0968a6d4026be6f699e3cbf151fb5402',1,'Jatekos']]],
+  ['stathozadas_258',['stathozAdas',['../class_jatekos.html#a6fe33b61c31f49434abad46e65882e75',1,'Jatekos']]],
+  ['szintlepes_259',['szintLepes',['../class_jatekos.html#a49ecf0db03a55c342ee321e49f7620c2',1,'Jatekos']]]
+];
