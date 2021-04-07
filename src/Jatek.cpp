@@ -1,7 +1,6 @@
 #include "Jatek.h"
 #include "Esemeny.h"
 #include "Kiegeszito.h"
-#include <iostream>
 #include <fstream>
 
 Jatek::Jatek()
@@ -170,12 +169,12 @@ void Jatek::jatekMenu()
     }
 }
 
-void Jatek::utazas()
+void Jatek::utazas(int iter)
 {
     Esemeny esemeny;
 
     elvalasztas();
-    esemeny.generalEsemeny(*jatekos,betoltottTargyak);
+    esemeny.generalEsemeny(*jatekos,betoltottTargyak,iter);
 }
 
 void Jatek::pihenes()
@@ -183,6 +182,7 @@ void Jatek::pihenes()
     int pihenesAr = (jatekos->getMaxEletero() - jatekos->getEletero()) / 2;
     elvalasztas();
     std::cout<<"==PIHENES==\n";
+    std::cout<<"Eletero: "<<jatekos->getEletero() << " / " << jatekos->getMaxEletero() << std::endl;
     std::cout<<"A pihenes ara: "<<pihenesAr<<std::endl;
     std::cout<<"A te penzed: "<<jatekos->getArany()<<std::endl;
 
@@ -241,7 +241,7 @@ void Jatek::karakterSzintlepes()
             std::cin.clear();
 			std::cin.ignore(100, '\n');
 			std::cout<<"Valasztas: ";
-            std::cin>>statValasztas;
+            std::cin >>statValasztas;
         }
         if(statValasztas==0)
         {
@@ -271,7 +271,7 @@ void Jatek::karakterMenu()
         std::cin.clear();
         std::cin.ignore(100, '\n');
         std::cout<<"Valasztas: ";
-        std::cin>>invValasztas;
+        std::cin >>invValasztas;
     }
     if(invValasztas==0)
     {

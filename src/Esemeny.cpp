@@ -6,17 +6,26 @@ Esemeny::Esemeny()
     //ctor
 }
 
-void Esemeny::generalEsemeny(Jatekos& jatekos, std::vector<Targy*> targyak)
+void Esemeny::generalEsemeny(Jatekos& jatekos, std::vector<Targy*> targyak, int iter)
 {
-    int randomSzam = rand() % 100 + 1;
+    /*int randomSzam = rand() % 100 + 1;
     if(randomSzam>80)
     {
         this->boltTalalkozas(jatekos,targyak);
     }
     else
     {
-        this->ellenfelTalalkozas(jatekos);
+        this->ellenfelTalalkozas(jatekos,4);
+    }*/
+    if(iter == 1)
+    {
+        this->boltTalalkozas(jatekos,targyak);
     }
+    else
+    {
+        this->ellenfelTalalkozas(jatekos,1);
+    }
+
 }
 
 void Esemeny::boltTalalkozas(Jatekos& jatekos,std::vector<Targy*> targyak)
@@ -118,23 +127,22 @@ void Esemeny::boltTalalkozas(Jatekos& jatekos,std::vector<Targy*> targyak)
     }
 }
 
-void Esemeny::ellenfelTalalkozas(Jatekos& jatekos)
+void Esemeny::ellenfelTalalkozas(Jatekos& jatekos, const int maxEllenfelek)
 {
     bool jatekosKor = false;
     int valasztas = 0;
 
-    int random = rand() % 2 +1;
+    /*int random = rand() % 2 +1;
     if(random==1)
         jatekosKor = true;
     else
         jatekosKor = false;
-
+    */
     bool elfut = false;
     bool jatekosLegyozve = false;
     bool ellensegekLegyozve = false;
 
     std::vector<Ellenseg*> ellensegek;
-    const int maxEllenfelek = 3;
     int ellenfelekSzama = rand() % maxEllenfelek + 1;
     for(int i = 0;i<ellenfelekSzama;i++)
     {

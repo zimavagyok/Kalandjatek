@@ -21,17 +21,18 @@
 1617626211 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\kiegeszito.cpp
 	"Kiegeszito.h"
 
-1617712274 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\main.cpp
+1617800312 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\main.cpp
 	<iostream>
 	<time.h>
 	"Jatek.h"
 	"gtest_lite.h"
 
-1617713604 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatek.h
+1617800221 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatek.h
 	"Jatekos.h"
 	"Targy.h"
 	"Jatek.h"
 	"memtrace.h"
+	<iostream>
 
 1617716203 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\jatekos.h
 	"Karakter.h"
@@ -54,14 +55,13 @@
 	"Jatekos.h"
 	<iostream>
 
-1617708591 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
+1617798505 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\jatek.cpp
 	"Jatek.h"
 	"Esemeny.h"
 	"Kiegeszito.h"
-	<iostream>
 	<fstream>
 
-1617712219 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\esemeny.h
+1617798305 c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\include\esemeny.h
 	"Jatekos.h"
 	"Ellenseg.h"
 	"Targy.h"
@@ -84,7 +84,7 @@
 	<string.h>
 	<stdlib.h>
 
-1617716352 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\esemeny.cpp
+1617801038 source:c:\users\csizm\desktop\c++\hf\kalandjatekv2\kalandjatek\src\esemeny.cpp
 	"Esemeny.h"
 	"Kiegeszito.h"
 

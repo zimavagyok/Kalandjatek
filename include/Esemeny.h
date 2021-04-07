@@ -26,7 +26,7 @@ class Esemeny
         /// Utazás esemény véletlenszerű generálása
         /// @param jatekos - A játékos referenciája, akivel történik az esemény
         /// @param targyak - A játékban található tárgyak listája
-        void generalEsemeny(Jatekos& jatekos,std::vector<Targy*> targyak);
+        void generalEsemeny(Jatekos& jatekos,std::vector<Targy*> targyak, int iter);
 
         /// Bolt esemény logikája
         /// @param jatekos - A játékos referenciája, aki vásárol
@@ -35,7 +35,8 @@ class Esemeny
 
         /// Harc esemény logikája
         /// @param jatekos - A játékos referenciája, aki harcba keveredik
-        void ellenfelTalalkozas(Jatekos& jatekos);
+        /// @param maxEllenfelek - A maximális ellenfelek száma
+        void ellenfelTalalkozas(Jatekos& jatekos, const int maxEllenfelek);
 };
 
 #endif // ESEMENY_H

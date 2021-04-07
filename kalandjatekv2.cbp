@@ -13,7 +13,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add option="-DMEMTRACE" />
 					<Add directory="include" />
 				</Compiler>
 			</Target>
@@ -44,6 +43,8 @@
 		<Unit filename="include/Karakter.h" />
 		<Unit filename="include/Kiegeszito.h" />
 		<Unit filename="include/Targy.h" />
+		<Unit filename="include/gtest_lite.h" />
+		<Unit filename="include/memtrace.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Ellenseg.cpp" />
 		<Unit filename="src/Esemeny.cpp" />
@@ -54,6 +55,7 @@
 		<Unit filename="src/Karakter.cpp" />
 		<Unit filename="src/Kiegeszito.cpp" />
 		<Unit filename="src/Targy.cpp" />
+		<Unit filename="src/memtrace.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

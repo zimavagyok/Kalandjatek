@@ -11,6 +11,7 @@
 #include "Targy.h"
 #include "Jatek.h"
 #include "memtrace.h"
+#include <iostream>
 
 /// Jatek osztály
 ///
@@ -24,6 +25,12 @@ class Jatek
     public:
         /// Konstruktor beállítja az attribútumokat
         Jatek();
+
+        /// Jatekos lekerdezese
+        Jatekos* getJatekos() const { return jatekos;}
+
+        /// Tárgyak lekérdezése
+        std::vector<Targy*> getBetoltottTargyak() const {return betoltottTargyak;}
 
         /// Virtuális destruktor
         virtual ~Jatek();
@@ -47,7 +54,8 @@ class Jatek
         void karakterSzintlepes();
 
         /// Utazás megvalósítása
-        void utazas();
+        /// @param iter - Iteráció száma
+        void utazas(int iter = 1);
 
         /// Pihenés megvalósítása
         void pihenes();
